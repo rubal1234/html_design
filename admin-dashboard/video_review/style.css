@@ -1,0 +1,252 @@
+body{
+    font-family: Roboto;
+}
+.title-text-heading{
+    color: #428BCA;
+}
+.search-div{
+    display: flex;
+    padding: 0 18px;
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+}
+.search-div i{
+    transform: rotate(0deg);
+    line-height: 40px;
+}
+
+.Search__input{
+	width: 100%;
+	height: 40px;
+    margin-left: 12px;
+    font-size: 16px;
+    border-radius: 40px;
+    font-family: inherit;
+    transition: all 0.3s;
+    border : none;
+    background: none;
+    font-family: Roboto;
+}
+.Search__input:focus{
+    outline: none;
+}
+.fa-stack{
+    font-size: 10px;
+    text-align: left;
+}
+.fa-stack .fa-caret-down {
+  position: absolute;
+  bottom: 3px;
+}
+
+.fa-stack .fa-caret-up {
+  position: absolute;
+  top: 3px;
+}
+#tbal{
+    border-radius: 20px;
+    box-shadow: 0px 3px 20px #00000029;
+}
+
+#tbal th{
+   padding: 26px 0.5rem;
+   font-size: 11px;
+   font-weight: normal;
+   cursor: pointer;
+}
+#tbal th:first-child{
+    border-top-left-radius: 20px;
+}
+#tbal th:last-child{
+    border-top-right-radius: 20px;
+}
+#tbal tbody td{
+    font-size: 13px;
+    border-bottom: 0px;
+}
+#tbal tbody td:nth-child(1){
+    font-weight: bold;
+} 
+#tbal tbody td:nth-child(2){
+    color: #707070;
+    word-break: break-word;
+}
+#tbal tbody td:nth-child(3){
+    font-weight: bold;
+}
+#tbal tbody td:nth-child(5){
+    font-weight: bold;
+}
+#tbal tbody td:nth-child(6){
+    font-weight: bold;
+}
+#tbal tbody tr td{
+    padding: 34px 0.5rem;
+    vertical-align: middle;
+}
+.invitation-checkbox{
+    cursor: pointer;
+    font-size: 15px;
+}
+#tbal tbody tr:nth-child(odd){
+    background : #fff;
+}
+#tbal tbody tr:nth-child(even){
+    background : #E9E9E9;
+}
+#tbal tbody tr:last-child td:nth-child(1){
+     border-bottom-left-radius: 20px;
+}
+#tbal tbody tr{
+    border-style: none;
+}
+#tbal tbody tr:last-child td:nth-child(8){
+     border-bottom-right-radius: 20px;
+}
+#tbal thead th:first-child{
+    padding-left: 16px;
+}
+#tbal tbody td:first-child{
+    padding-left: 16px;
+}
+.video{
+    width: 57px;
+    height: 57px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.play-control{
+    transform: translate(-15px,-5px);
+}
+
+.Pagination a.active {
+  background-color: #666666;
+  color: white;
+  border: 1px solid #444444;
+  border-radius: 1px;
+}
+.prev{
+  border: 1px solid #444444 !important;
+  border-radius: 5px 0px 0px 5px !important;
+}
+.next{
+    border: 1px solid #444444 !important;
+    border-radius: 1px 5px 5px 1px !important;
+}
+.Pagination a {
+  color: #000;
+  font-family: Roboto;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  box-shadow: 0px 3px 6px #00000029;
+  border : 1px solid #707070;
+}
+.save_btn{
+    background : #1492E6 !important;
+    color: #fff;
+    display: none;
+}
+.save_btn:active{
+    background : #1492E6 !important;
+    color: #fff !important;
+    box-shadow: none !important;   
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 336px;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  box-shadow: 0px 16px 48px #00000029;
+  border-radius: 16px;
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.done{
+    color : #21AC3D;
+    font-size: 32px;
+}
+.success-info{
+    font-size: 12px;
+}
+.ok_btn{
+    background : #1492E6;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+}
+.ok_btn:hover{
+ color: #fff !important;   
+}
+#selectbox{
+    font-size: 15px;
+}
+
+.back_btn{
+    box-shadow: 0px 16px 48px #00000029;
+    background: #2680EB 0% 0% no-repeat padding-box !important;
+}
+
+#top-header{
+  margin: 0;
+  padding: 0 !important;
+  max-width: 100%;
+  box-shadow: 0px 3px 6px #00000029;
+  height : 75px;
+  transition: 0.5s;
+}
+.menu_Icon{
+  background : none !important;
+  border : none !important;
+  width: 51px;
+  height: 51px;
+    border-radius: 50%;
+    margin-left: 45px;
+}
+
+.menu_Icon:hover{
+  background : #F5F5F5 !important;
+  transition: 0.5s ease-in-out;
+}
+.headerLogo{
+  width : 121px;
+  height: 52px;
+}
+.profile_name{
+  font: normal normal normal 17px/23px Roboto;
+}
+.dropDown_Icon i{
+  color: #707070;
+  width: 15px;
+  cursor: pointer;
+}
+.view_video{
+  height: calc(100% - 70px);
+}

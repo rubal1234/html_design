@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call Recording</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+</head>
+<body>
+    <div class="container mt-5 rounded bg-white py-3 mb-2">
+  	    <div class="row">
+  		    <div class="col-12">
+  			   <h3 class="call_recording_heading">Call Recordings</h3>
+  		    </div>
+  	    </div>
+
+  	    <div class="row mt-3 px-3 py-3 align-items-center">
+  		    <div class="col-lg-3 col-md-5 col-sm-6">
+	  		    <label class="label-text">Call Recordings</label>
+	        </div>
+	    </div>
+    
+        <div class="row mt-3 px-3">
+	        <div class="col-sm-12 col-md-6">
+		      <button class="btn btn-primary">Today</button>
+		      <button class="btn btn-primary">Last Week</button>
+		      <button class="btn btn-primary">Last Month</button>
+	        </div>
+
+	        <div class="col-sm-12 col-md-6 mt-2 mt-md-0 justify-content-end">
+	        	<input type="text" name="" class="form-control" placeholder="Filter results">
+	        </div>
+	    </div>
+
+	    <div class="row mt-2">
+	    	<div class="col-12">
+	    		<div class = "ResultsTable__wrapper mt-4 px-3">
+	                <table class="ResultsTable ResultsTable--sortable">
+			           <thead>
+						    <tr>
+						        <th>Call Type</th>
+						        <th>Caller</th>
+						        <th>Agent</th>
+						        <th>Company</th>
+						        <th>Call Received</th>
+						        <th>Call Picked</th>
+						        <th>Call Ended</th>
+						        <th>Call Picked Seconds</th>
+						        <th>Call Duration Seconds</th>
+						        <th>Call Queued Seconds</th>
+						        <th>Recording</th>
+						        <th>recording graph</th>
+						        <th>Audio Url</th>
+						        <th>Experts Name</th>
+						    </tr>
+			            </thead>
+			            <tbody>
+			            	<tr>
+			            		<td>
+			            			<div class="row">
+			            				<div class="col-12 text-end">
+			            					<p class="live_call"></p>
+			            				</div>
+			            				<div class = "col-12">
+			            					<img class="w-75" src = "incoming_call.png" alt = "incoming_call">
+			            					<p class="mb-auto">Incoming</p>
+			            				</div>
+			            		    </div>
+			            		</td>
+			            		<td>7903599552</td>
+			            		<td>Ruwal Shah</td>
+			            		<td>Busibud</td>
+			            		<td>2021-09-17 00:37:58</td>
+			            		<td>2021-09-17 00:37:58</td>
+			            		<td>2021-09-17 02:37:58</td>
+			            		<td>30</td>
+			            		<td>2000</td>
+			            		<td>-</td>
+			            		<td>
+			            			<audio controls=""> <source src="" type="audio/mpeg"></audio>
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-info text-white">Audio Graph</button>
+			            		</td>
+			            		<td>
+			            			<a href="https://media.plivo.com/v1/Account/MANZFLNTI0NGVJNJFIYT/Recording/cf7f1e88-b6de-11eb-9a28-02ccac8d1ce4.mp3" target="_blank" class="audio_url">Audio Url</a>
+			            		</td>
+			            		<td>
+			            			<select class="form-select">
+			            				<option>Select</option>
+			            				<option>Anna</option>
+			            			</select>
+			            		</td>
+			            	</tr>
+			            	<tr>
+			            		<td>
+			            			<div class="row">
+			            				<div class="col-12 text-end">
+			            					<p class="live_call"></p>
+			            				</div>
+			            				<div class = "col-12">
+			            					<img class="w-75" src = "incoming_call.png" alt = "incoming_call">
+			            					<p class="mb-auto">Incoming</p>
+			            				</div>
+			            		    </div>
+			            		</td>
+			            		<td>7903599552</td>
+			            		<td>Ruwal Shah</td>
+			            		<td>Busibud</td>
+			            		<td>2021-09-17 00:37:58</td>
+			            		<td>2021-09-17 00:37:58</td>
+			            		<td>2021-09-17 02:37:58</td>
+			            		<td>30</td>
+			            		<td>2000</td>
+			            		<td>-</td>
+			            		<td>
+			            			<audio controls=""> <source src="" type="audio/mpeg"></audio>
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-info text-white">Audio Graph</button>
+			            		</td>
+			            		<td>
+			            			<a href="https://media.plivo.com/v1/Account/MANZFLNTI0NGVJNJFIYT/Recording/cf7f1e88-b6de-11eb-9a28-02ccac8d1ce4.mp3" target="_blank" class="audio_url">Audio Url</a>
+			            		</td>
+			            		<td>
+			            			<select class="form-select">
+			            				<option>Select</option>
+			            				<option>Anna</option>
+			            			</select>
+			            		</td>
+			            	</tr>
+			            	<tr>
+			            		<td>
+			            			<div class="row">
+			            				<div class="col-12 text-end">
+			            					<p class="live_call"></p>
+			            				</div>
+			            				<div class = "col-12">
+			            					<img class="w-75" src = "incoming_call.png" alt = "incoming_call">
+			            					<p class="mb-auto">Incoming</p>
+			            				</div>
+			            		    </div>
+			            		</td>
+			            		<td>7903599552</td>
+			            		<td>Ruwal Shah</td>
+			            		<td>Busibud</td>
+			            		<td>2021-09-17 00:37:58</td>
+			            		<td>2021-09-17 00:37:58</td>
+			            		<td>2021-09-17 02:37:58</td>
+			            		<td>30</td>
+			            		<td>2000</td>
+			            		<td>-</td>
+			            		<td>
+			            			<audio controls=""> <source src="" type="audio/mpeg"></audio>
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-info text-white">Audio Graph</button>
+			            		</td>
+			            		<td>
+			            			<a href="https://media.plivo.com/v1/Account/MANZFLNTI0NGVJNJFIYT/Recording/cf7f1e88-b6de-11eb-9a28-02ccac8d1ce4.mp3" target="_blank" class="audio_url">Audio Url</a>
+			            		</td>
+			            		<td>
+			            			<select class="form-select">
+			            				<option>Select</option>
+			            				<option>Anna</option>
+			            			</select>
+			            		</td>
+			            	</tr>
+			            </tbody>
+			        </table>
+	    	    </div>
+	        </div>
+        </div>
+        <!-- Pagination button -->
+		<div class="row px-3 py-3">
+			<div class="col-12 gap-2 justify-content-end d-flex">
+				    <a class="page_link prev current" href="#">Previous</a>
+				    <a class="page_link current" href="#">1</a>
+				    <a class="page_link" href="#">2</a>
+				    <a class="page_link" href="#">3</a>
+				    <a class="page_link next" href="#">Next</a>
+			</div>
+		</div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+</body>
+</html>

@@ -1,0 +1,123 @@
+body{
+  font-family: Roboto;
+}
+#top-header{
+	margin: 0;
+	padding: 0 !important;
+	width: 100%;
+/*	box-shadow: 0px 3px 6px #00000029;*/
+	height : 75px;
+	transition: 0.5s;
+  margin-left: 250px;
+  position: fixed;
+  background : white;
+  z-index: 100000;
+}
+.menu_Icon{
+	background : none !important;
+	border : none !important;
+	width: 51px;
+	height: 51px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.menu_Icon img{
+  width: 22px;
+}
+.menu_Icon:hover{
+	background : #F5F5F5 !important;
+	transition: 0.5s ease-in-out;
+}
+
+.sidepanel  {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #F8F8F8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  /*box-shadow: 0px 3px 6px #00000029;*/
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+.active_page{
+  display: none;
+  height: auto !important;
+}
+.main-content{
+  display: none;
+  margin-left: 250px;
+  background : #f1f1f1;
+  height: 100vh;
+}
+.training-material-heading{
+  font-size: 22px;
+  color: #5a5a5a;
+  margin-top: 75px;
+}
+.section_store{
+  border-radius: 1.1875rem !important;
+}
+.comp_name{
+  font-size: 16px !important;
+  color: #5a5a5a;
+}
+#myTable th{
+  font-size : 12px;
+  color: #5a5a5a;
+  font-weight: normal;
+  width: 65%;
+  padding-left: 0px;
+  padding-right: 0px; 
+}
+#myTable td{
+  font-size : 10px;
+  color: #707070;
+  padding-left: 0px;
+  padding-right: 0px;  
+}
+.open_btn{
+  background-image: linear-gradient(to left,#FF8F73, #F2547D);
+}
+.inner-div{
+  max-height: 360px;
+  min-height: 360px;
+  border-radius: 1.1875rem !important;
+}
+.store_text{
+  color: #444;
+  font-size: 22px;
+}
+.carousel-item-img{
+  height: 325px;
+}
+.download-training{
+  font-size: 20px;
+  color: #5a5a5a;
+}
+@media only screen and (max-width: 1200px){
+  .sidepanel{
+    width: 0px;
+  }
+  .main-content{
+    margin-left: 0px;
+  }
+  #top-header{
+    margin-left: 0px; 
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
+    <link rel="stylesheet" href="repo7.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Top heading div -->
+  <div class="row ms-5 mt-4 ps-1">
+    <div class="col-12">
+      <h3 class="heading" id="sd-main">Change Password</h3>
+    </div>
+  </div>
+  <div class="row ms-5">
+    <div class="col-6">
+      <div class="container mt-3 mb-2 bg-white" style="border-radius: 20px;">
+
+        <div class="row px-3 py-3">
+          <div class="col-12 text-center">
+            <div class="input-group mt-3 mb-3">
+              <input style="border-right: 0px;" type="text" class="form-control" placeholder="Enter your current password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span style="background-color: white;" class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M86,28.66667c-57.33333,0 -78.83333,57.33333 -78.83333,57.33333c0,0 21.5,57.33333 78.83333,57.33333c57.33333,0 78.83333,-57.33333 78.83333,-57.33333c0,0 -21.5,-57.33333 -78.83333,-57.33333zM86,43c37.81133,0 56.93626,30.58084 63.12826,42.97201c-6.19917,12.30517 -25.46742,43.02799 -63.12826,43.02799c-37.81133,0 -56.93626,-30.58084 -63.12826,-42.97201c6.20633,-12.30517 25.46742,-43.02799 63.12826,-43.02799zM86,57.33333c-15.83117,0 -28.66667,12.8355 -28.66667,28.66667c0,15.83117 12.8355,28.66667 28.66667,28.66667c15.83117,0 28.66667,-12.8355 28.66667,-28.66667c0,-15.83117 -12.8355,-28.66667 -28.66667,-28.66667zM86,71.66667c7.91917,0 14.33333,6.41417 14.33333,14.33333c0,7.91917 -6.41417,14.33333 -14.33333,14.33333c-7.91917,0 -14.33333,-6.41417 -14.33333,-14.33333c0,-7.91917 6.41417,-14.33333 14.33333,-14.33333z"></path></g></g></svg></span>
+            </div>
+            <div class="input-group mb-3">
+              <input style="border-right: 0px;" type="text" class="form-control" placeholder="Enter new password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span style="background-color: white;" class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M86,28.66667c-57.33333,0 -78.83333,57.33333 -78.83333,57.33333c0,0 21.5,57.33333 78.83333,57.33333c57.33333,0 78.83333,-57.33333 78.83333,-57.33333c0,0 -21.5,-57.33333 -78.83333,-57.33333zM86,43c37.81133,0 56.93626,30.58084 63.12826,42.97201c-6.19917,12.30517 -25.46742,43.02799 -63.12826,43.02799c-37.81133,0 -56.93626,-30.58084 -63.12826,-42.97201c6.20633,-12.30517 25.46742,-43.02799 63.12826,-43.02799zM86,57.33333c-15.83117,0 -28.66667,12.8355 -28.66667,28.66667c0,15.83117 12.8355,28.66667 28.66667,28.66667c15.83117,0 28.66667,-12.8355 28.66667,-28.66667c0,-15.83117 -12.8355,-28.66667 -28.66667,-28.66667zM86,71.66667c7.91917,0 14.33333,6.41417 14.33333,14.33333c0,7.91917 -6.41417,14.33333 -14.33333,14.33333c-7.91917,0 -14.33333,-6.41417 -14.33333,-14.33333c0,-7.91917 6.41417,-14.33333 14.33333,-14.33333z"></path></g></g></svg></span>
+            </div>
+            <div class="input-group mb-3">
+              <input style="border-right: 0px;" type="text" class="form-control" placeholder="Re-enter new password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span style="background-color: white;" class="input-group-text" id="basic-addon2"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="24" height="24"
+                viewBox="0 0 172 172"
+                style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#cccccc"><path d="M86,28.66667c-57.33333,0 -78.83333,57.33333 -78.83333,57.33333c0,0 21.5,57.33333 78.83333,57.33333c57.33333,0 78.83333,-57.33333 78.83333,-57.33333c0,0 -21.5,-57.33333 -78.83333,-57.33333zM86,43c37.81133,0 56.93626,30.58084 63.12826,42.97201c-6.19917,12.30517 -25.46742,43.02799 -63.12826,43.02799c-37.81133,0 -56.93626,-30.58084 -63.12826,-42.97201c6.20633,-12.30517 25.46742,-43.02799 63.12826,-43.02799zM86,57.33333c-15.83117,0 -28.66667,12.8355 -28.66667,28.66667c0,15.83117 12.8355,28.66667 28.66667,28.66667c15.83117,0 28.66667,-12.8355 28.66667,-28.66667c0,-15.83117 -12.8355,-28.66667 -28.66667,-28.66667zM86,71.66667c7.91917,0 14.33333,6.41417 14.33333,14.33333c0,7.91917 -6.41417,14.33333 -14.33333,14.33333c-7.91917,0 -14.33333,-6.41417 -14.33333,-14.33333c0,-7.91917 6.41417,-14.33333 14.33333,-14.33333z"></path></g></g></svg></span>
+            </div>
+            <p style="float:left;color: red;font: normal normal normal 13px/18px Nunito Sans;letter-spacing: 0.26px;">* Password doesn't match</p>
+            <button style="float: right;" type="button" class="btn btn-danger mt-4 mb-4">Change Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="repo7.js"></script>
+</body>
+</html>

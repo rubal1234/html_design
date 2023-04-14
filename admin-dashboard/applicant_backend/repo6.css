@@ -1,0 +1,114 @@
+body{
+/*    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(252, 249, 249);
+    margin-top: 30px;*/
+    background : #ddd;
+    font-family: Roboto;
+}
+.heading{
+    font-family: Muli !important;
+    font-size: 22px;
+}
+.inner-heading{
+    font-size: 18px;
+    color: #444;
+    font-weight: 600;
+    font-family: Muli !important;
+}
+.subheading-col{
+    text-align: center;
+    margin-top: 40px;
+}
+.selectdetails-icons-col{
+    text-align: right;
+    align-self: center;
+}
+.selectdetails-icons{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: grey;
+}
+.dropdown-fl{
+    width: 300px;
+}
+#dropdown-aftertext{
+    font-size: 16px;
+}
+table{
+    font-size: small;
+}
+#cc-picker{
+    border: 0px;
+}
+.addslot-table thead{
+    text-align: center;
+}
+.btn-info{
+    color: white;
+}
+.fre-btn{
+    width: 80px;
+}
+.exec-btn{
+    width: 90px;
+}
+.timer{
+    height: 38px;
+}
+
+.ResultsTable__wrapper{
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    position: relative;
+}
+.ResultsTable {
+    min-width: calc(100% - 2px);
+    border-collapse: collapse;
+}
+.ResultsTable--sortable {
+    table-layout: fixed;
+    border: 3px solid #ccc;
+}
+
+.ResultsTable thead th {
+    font-weight: 600;
+    line-height: 16px;
+    font-size: 14px;
+    text-transform: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+.ResultsTable td, .ResultsTable th {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.ResultsTable th {
+    text-align: left;
+    white-space: nowrap;
+    padding: 9px 18px;
+}
+.ResultsTable--sortable th:first-child, .ResultsTable--sortable th:nth-child(2) {
+    min-width: initial;
+}
+.ResultsTable td{
+    padding: 10px;
+    font-size: 14px;
+}
+.ResultsTable tfoot td{
+    border : none;
+}
+.history-modal-text{
+    color: grey;
+}
+
+.status-content{
+    background-color: lightskyblue;
+    color: white;
+}
+.container.mt-5.mb-2.rounded {
+    padding-left: 0px;
+    padding-right: 0px;
+}

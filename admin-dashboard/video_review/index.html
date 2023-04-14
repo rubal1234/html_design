@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video Review Admin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div class="container">
+ 	<div class="row mt-4">
+        <div class = "col-12 col-md-4 col-xl-4">
+            <h4 class = "px-2 py-2  title-text-heading fw-bold">Video Reviews</h4>
+        </div>
+        <div class="col-12 col-md-4 col-xl-4">
+        	<select class="form-select" id = "selectbox">
+			  <option selected disabled>Filter by company</option>
+			  <option value="1">One</option>
+			  <option value="2">Two</option>
+			  <option value="3">Three</option>
+			</select>
+        </div>
+        <div class = "col-12 col-md-4 col-xl-4">
+          <div class = "search-div mt-2 mt-md-0">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search by name,email and company"
+              class="Search__input"
+            ></input>
+          </div>
+        </div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col-12 mt-2 overflow-auto">
+  			
+		  	<!--Table Section -->
+		  	<table class='table  table-striped w-100 border-0' id="tbal">
+		      <thead>
+		        <tr class='bg-dark text-white'>
+		          <th>
+		          	<div class="d-flex align-items-center">
+		          	<span>Reviewer Name</span>
+                        <span class="fa fa-stack mx-2">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+		          </th>
+		          <th>
+		          	<div class="d-flex align-items-center">
+		          	<span>Reviewer Email</span>
+                        <span class="fa fa-stack mx-2">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+		          </th>
+		          <th>
+                    <div class="d-flex align-items-center">
+		          	    <span>Company Name</span>
+                        <span class="fa fa-stack mx-2">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+		          </th>
+		          <th>Video Uploaded</th>
+		          <th>
+		          	<div class="d-flex align-items-center">
+		          	    <span>Date of Review</span>
+                        <span class="fa fa-stack mx-2">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+		          </th>
+		          <th>
+		          	<div class="d-flex align-items-center">
+		          	    <span>Date of Approval</span>
+                        <span class="fa fa-stack mx-2">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        </span>
+                    </div>
+		          </th>
+		          <th>Invitation to Promote</th>
+		          <th>Revenue Generated</th>              
+		        </tr>
+		      </thead>
+
+		      <tbody>
+		      	<tr>
+		      		<td>Ruwal Shah</td>
+		      		<td>ruwal@zinosi.com</td>
+		      		<td>Busibud</td>
+		      		<td>
+		      			<div class="position-relative">
+		      			  <i class="fas fa-play play-control position-absolute start-50 top-50 text-white"></i>
+		      			  <video class="video rounded">
+		      				<source src = "assets/video.mp4">
+		      			  </video>
+		      		    </div>
+		      		</td>
+                    <td>13/09/2021</td>
+                    <td>13/09/2021</td>
+                    <td>
+                    	<input class="form-check-input invitation-checkbox mx-2" type="checkbox" value="" id="flexCheckIndeterminate"> 
+                    	<span class="fw-bold">Invited</span>
+                    </td>
+                    <td>
+                    	<div class="d-flex align-items-center">
+                            <span class="mx-2 fw-bold">$</span>
+                            <input type="number" name="" class="form-control w-50 p-0 revenue_text">
+                        </div>
+                        <input type="submit" name="" class="border-0 p-1 rounded w-50 p-0 mx-4 my-2 save_btn" value = "Save">
+                    </td>
+		      	</tr>
+
+		      	<tr>
+		      		<td>Ruwal Shah</td>
+		      		<td>ruwal@zinosi.com</td>
+		      		<td>Busibud</td>
+		      		<td>
+		      			<div class="position-relative">
+		      			  <i class="fas fa-play play-control position-absolute start-50 top-50 text-white"></i>
+		      			  <video class="video rounded">
+		      				<source src = "assets/video.mp4">
+		      			  </video>
+		      		    </div>
+		      		</td>
+                    <td>13/09/2021</td>
+                    <td>13/09/2021</td>
+                    <td>
+                    	<input class="form-check-input invitation-checkbox mx-2" type="checkbox" value="" id="flexCheckIndeterminate"> 
+                    	<span class="fw-bold">Invited</span>
+                    </td>
+                    <td>
+                    	<div class="d-flex align-items-center">
+                            <span class="mx-2 fw-bold">$</span>
+                            <input type="number" name="" class="form-control w-50 p-0 revenue_text">
+                        </div>
+                         <input type="submit" name="" class="border-0 p-1 rounded w-50 p-0 mx-4 my-2 save_btn" value = "Save">
+                    </td>
+		      	</tr>
+		      </tbody>
+		    </table>
+  		</div>
+  	</div>
+    
+     <!-- Pagination Button -->
+  	<div class = "row">
+    <div class = "col-12 text-end py-5">
+      <div class="Pagination">
+        <a class = "active prev" href="#">Prev</a>
+        <a href="#" class="mx-1 active">1</a>
+        <a href="#" class = "">2</a>
+        <a href="#" class = "">3</a>
+        <a href="#" class = "mx-1 active next">Next</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+  <div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header  border-0 justify-content-center">
+          <i class="fas fa-check-circle done"></i>
+        </div>
+        <div class="modal-body p-0 text-center fw-bold">
+          <p class="success-info">Saved Successfully!</p>
+        </div>
+        <div class="modal-footer p-0  border-0 justify-content-center">
+          <button type="button" class="btn btn-default ok_btn" data-dismiss="modal">Ok</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src = "script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

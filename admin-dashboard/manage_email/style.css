@@ -1,0 +1,104 @@
+body{
+	background: #ddd;
+	font-family: "Muli",sans-serif;
+}
+.ResultsTable__wrapper{
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    position: relative;
+}
+.ResultsTable {
+    min-width: calc(100% - 2px);
+    border-collapse: collapse;
+}
+.ResultsTable--sortable {
+    table-layout: fixed;
+}
+
+.ResultsTable thead th {
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: none;
+    color: #99a2ab;
+}
+
+.ResultsTable td, .ResultsTable th {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.ResultsTable th {
+    text-align: left;
+    white-space: nowrap;
+    padding: 9px 18px;
+}
+.ResultsTable--sortable th:first-child, .ResultsTable--sortable th:nth-child(2) {
+    min-width: initial;
+}
+.ResultsTable td{
+	padding: 10px;
+}
+.badge-success{
+	  background: transparent;
+    border:1px solid #22af46;
+    color: #22af46;
+}
+.badge.badge-info {
+    background: transparent;
+    border: 1px solid #3C89DA;
+    color: #3C89DA;
+}
+.ResultsTable tbody tr:nth-child(even){
+  background : #f2f2f2;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+.close {
+  color: #aaaaaa;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.swal-button{
+	background: #dc3545 !important;
+}
+.swal-button--cancel{
+	background: #ccc !important;
+}

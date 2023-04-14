@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--Top Navigation Bar -->
+  <nav class="navbar fixed-top navbar-light bg-white commonBox_shadow" id = "top-header">
+    <div class="container-fluid">
+      <div class="col-4  d-flex btn_BG">
+          <button type="button" id="sidebarCollapse" class="menu_Icon">
+              <img  src="https://img.icons8.com/material-rounded/36/707070/menu--v1.png" alt="hamburger menu" onclick="toggleNav()"/>
+          </button>
+        </div>
+          
+        <div class="col-4  d-flex justify-content-center">
+            <img class="headerLogo" src="assets/logo.png" alt="Logo" />
+          </div>
+          
+        <div class="col-2 d-flex justify-content-end align-items-center">   
+            <div class="mx-1 d-md-block d-sm-none d-none"><span class = "profile_name">Lara Erickson</span></div>
+                <div class="mx-1 d-block dropDown_Icon">
+                     <div class="btn-group">
+                      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" type="button"><i class="fas fa-users-cog me-2"></i>Account Settings</button></li>
+                        <li><button class="dropdown-item" type="button"><img src = "assets/logout.jpg" class="me-2 logout-icon" />Logout</button></li>
+                      </ul>
+                    </div>
+                    </div>
+              </div>
+
+            <div class="col-2 text-center">
+              <img class="profile_img" src="img/images/images_.png" alt="profile pic"/>
+            </div>
+      </div>
+    </nav>
+<!-- Side Navigation Bar -->
+
+  <div id="mySidepanel" class="sidepanel">
+    <i class="fa fa-times float-end times_icon" aria-hidden="true"></i>
+    <div class = "mt-4 sidebar-content">
+      <div class = "item-div">
+        <i class="fa fa-play-circle"></i><span>Customer Service</span>  
+      </div>
+      <div class = "item-div">
+        <i class="fa fa-play-circle"></i><span>Manage video reviews</span>  
+      </div>
+    </div>
+  </div>
+
+<!--Loader -->
+
+<div class="overlay position-fixed top-0 w-100 h-100">
+   <div class="loader start-50 top-50 position-absolute"></div>
+</div>
+
+<!-- Overview Section -->
+  <div class="main-content">
+    <div class = "container" id = "main">
+      <div class="row mt-4">
+        <div class = "col-12 col-md-6 col-xl-6">
+          <div class= "mt-5 play-img">
+            <i class="fa fa-play-circle"></i>
+            <span class = "px-2 title-text-heading">Video reviews by customers</span>
+          </div>
+        </div>
+
+
+        <div class = "col-12 col-md-6 col-xl-4">
+          <div class = "mt-5 search-div">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Search by name,email and file name"
+              class="Search__input"
+            ></input>
+          </div>
+        </div>
+    </div>
+
+      <div class = "overview-section">
+        <div class="row">
+          <div class="col">
+            <div class = "mt-5">
+              <span class = "overview-title">Overview : </span>
+            </div>    
+          </div>
+        </div>
+    
+        <div class = "row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class = "mt-2 d-flex align-items-center rounded generated overflow-auto">
+              <div class = "py-4 px-4 justify-content-start overview-div-left-content">
+                Total videos generated
+              </div>
+              <div class = "px-5 px-lg-4 justify-content-center overview-div-right-content">
+                9
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class = " mt-2 d-flex align-items-center rounded partnership overflow-auto">
+              <div class = "py-4 px-4 px-lg-2 overview-div-left-content">
+                Total partnership links generated
+              </div>
+              <div class = "px-5 px-lg-3 overview-div-right-content">
+                8
+              </div>
+            </div>
+          </div>
+ 
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class = "mt-2 d-flex align-items-center rounded revenue overflow-auto">
+              <div class = "py-4 px-2 px-lg-3 overview-div-left-content">
+                Total Partnership revenue generated
+              </div>
+              <div class = "px-1 px-lg-4 overview-div-right-content">
+                $108
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class = "mt-2 d-flex align-items-center rounded invitations overflow-auto">
+              <div class = "py-4 px-4 overview-div-left-content">
+                Total partenership invitations sent
+              </div>
+              <div class = "px-4 px-lg-2 overview-div-right-content">
+                8
+              </div>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
+  </div>
+   
+ 
+     <div class = "mx-auto text-center mt-4  position-relative">
+         <div class = "position-absolute rounded py-2 text-white start-50 top-100 translate-middle w-75 toast-div">
+           <span>Approved successfully! invitation will be sent out within 24 hours.</span>
+         </div>
+     </div>
+
+  <!-- Table For Desktop View -->
+  <div class="container position-relative mt-5 pt-1  d-none  d-sm-none d-md-block">
+
+  <!-- Toast for desktop view -->
+    <table class='w-100 ' id="tbal">
+      <thead>
+        <tr class='bg-dark text-white'>
+          <th>Date</th>
+          <th>Name</th>
+          <th>View Video</th>
+          <th>Social media followers</th>
+          <th>Approval Status</th>
+          <th>Invitation to Promote</th>
+          <th>Revenue Generated</th>
+          </tr>              
+      </thead>
+
+      <tbody>
+        <tr>
+          <tr  class="table_row">
+           <td>30/9/2021</td>
+           <td>
+             <p class="fw-bold mb-auto">Leeza Rodds</p>
+             <p class="email">leeza@gmail.com</p>
+           </td>
+           <td>
+                <div class="control" onclick="handleVideo();">
+                <i class="fas fa-play play-control"></i>
+                <video class="video">
+                  <source class="embed-responsive-item" src="assets/video.mp4" />
+                </video>
+              </div>
+           </td>
+           <td>500-1000</td>
+           <td>
+            <div class="d-flex">
+            <i class="fas fa-circle px-1 active-status status-pen"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Pending
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Approved</a></li>
+                <li><a class="dropdown-item" href="#">Rejected</a></li>
+              </ul>
+            </div>
+          </div>
+           </td>
+           <td>
+             <i class="fas fa-circle px-1 invite"></i>
+             <span class="invite_text">Invited</span>
+           </td>
+           <td>-</td>
+          </tr>
+          <tr class="social_followers_row">
+            <td  colspan = "7">
+              <div class="d-flex">
+                <div class="d-flex">
+                  <i class="fab fa-instagram pe-1 social_icon"></i><span class="fw-normal social_text">Instagram</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-facebook pe-1 social_fb_icon"></i><span class="fw-normal social_text">Facebook</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-pinterest pe-1 social_pin_icon"></i><span class="fw-normal social_text">500-1000</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-twitter pe-1 social_tw_icon"></i><span class="fw-normal social_text">1000-1500</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-tiktok pe-1 social_tk_icon"></i><span class="fw-normal social_text">tiktok</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tr>
+
+
+        <tr>
+          <tr class="table_row">
+           <td>30/9/2021</td>
+           <td>
+             <p class="fw-bold mb-auto">Leeza Rodds</p>
+             <p class="email">leeza@gmail.com</p>
+           </td>
+           <td>
+                <div class="control" onclick="handleVideo();">
+                <i class="fas fa-play play-control"></i>
+                <video class="video">
+                  <source class="embed-responsive-item" src="assets/video.mp4" />
+                </video>
+              </div>
+           </td>
+           <td>500-1000</td>
+           <td>
+            <div class="d-flex">
+            <i class="fas fa-circle px-1 active-status status-pen"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Pending
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Approved</a></li>
+                <li><a class="dropdown-item" href="#">Rejected</a></li>
+              </ul>
+            </div>
+          </div>
+           </td>
+           <td>
+             <i class="fas fa-circle px-1 invite"></i>
+             <span class="invite_text">Invited</span>
+           </td>
+           <td>-</td>
+          </tr>
+          <tr class="social_followers_row">
+            <td  colspan = "7">
+              <div class="d-flex">
+                <div class="d-flex">
+                  <i class="fab fa-instagram pe-1 social_icon"></i><span class="fw-normal social_text">Instagram</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-facebook pe-1 social_fb_icon"></i><span class="fw-normal social_text">Facebook</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-pinterest pe-1 social_pin_icon"></i><span class="fw-normal social_text">500-1000</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-twitter pe-1 social_tw_icon"></i><span class="fw-normal social_text">1000-1500</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-tiktok pe-1 social_tk_icon"></i><span class="fw-normal social_text">tiktok</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tr>
+
+                <tr>
+          <tr class="table_row">
+           <td>30/9/2021</td>
+           <td>
+             <p class="fw-bold mb-auto">Leeza Rodds</p>
+             <p class="email">leeza@gmail.com</p>
+           </td>
+           <td>
+                <div class="control" onclick="handleVideo();">
+                <i class="fas fa-play play-control"></i>
+                <video class="video">
+                  <source class="embed-responsive-item" src="assets/video.mp4" />
+                </video>
+              </div>
+           </td>
+           <td>500-1000</td>
+           <td>
+            <div class="d-flex">
+            <i class="fas fa-circle px-1 active-status status-pen"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Pending
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Approved</a></li>
+                <li><a class="dropdown-item" href="#">Rejected</a></li>
+              </ul>
+            </div>
+          </div>
+           </td>
+           <td>
+             <i class="fas fa-circle px-1 invite"></i>
+             <span class="invite_text">Invited</span>
+           </td>
+           <td>-</td>
+          </tr>
+          <tr class="social_followers_row">
+            <td  colspan = "7">
+              <div class="d-flex">
+                <div class="d-flex">
+                  <i class="fab fa-instagram pe-1 social_icon"></i><span class="fw-normal social_text">Instagram</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-facebook pe-1 social_fb_icon"></i><span class="fw-normal social_text">Facebook</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-pinterest pe-1 social_pin_icon"></i><span class="fw-normal social_text">500-1000</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-twitter pe-1 social_tw_icon"></i><span class="fw-normal social_text">1000-1500</span>
+                </div>
+                <div class="d-flex ms-3">
+                  <i class="fab fa-tiktok pe-1 social_tk_icon"></i><span class="fw-normal social_text">tiktok</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<!-- Table For Smaller Device -->
+<div class ="d-none d-sm-none d-md-none container">
+  <table class='table  table-striped w-100 ml-0' id="tbal">
+      <thead>
+        <tr class='bg-dark text-white'>
+          <th>Name</th>
+          <th>E-mail</th>           
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Anupam Roby</td>
+          <td>gurleen@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Gurleen Arora</td>
+          <td>anupam@gmail.com</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+
+<div class ="d-none d-sm-none d-md-none container">
+  <table class='table  table-striped w-100 ml-0' id="tbal">
+      <thead>
+        <tr class='bg-dark text-white'>
+          <th>Video Video</th>
+          <th>Approval Status</th>           
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="control">
+              <i class="fas fa-play play-control"></i> 
+              <video class="video">
+                <source class="embed-responsive-item" src="assets/video.mp4"></source>
+              </video>
+            </div>
+          </td>
+          <td>
+             <div class="d-flex">
+            <i class="fas fa-circle px-1 active-status status-pen"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Options
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Approved</a></li>
+                <li><a class="dropdown-item" href="#">Pending</a></li>
+                <li><a class="dropdown-item" href="#">Rejected</a></li>
+              </ul>
+            </div>
+          </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="control">
+              <i class="fas fa-play play-control"></i> 
+              <video class="video">
+                <source class="embed-responsive-item" src="assets/video.mp4"></source>
+              </video>
+            </div>
+          </td>
+          <td>
+          <div class="d-flex">
+            <i class="fas fa-circle px-1 active-status status-pen"></i>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Options
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Approved</a></li>
+                <li><a class="dropdown-item" href="#">Pending</a></li>
+                <li><a class="dropdown-item" href="#">Rejected</a></li>
+              </ul>
+            </div>
+          </div>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+
+<div class ="d-none d-sm-none d-md-none container">
+  <table class='table  table-striped w-100 ml-0' id="tbal">
+      <thead>
+        <tr class='bg-dark text-white'>
+          <th>Invitation to Promote</th>
+          <th>Revenue Generated</th>           
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Invite to the partnership program will be sent in 24 hours.</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Invite to the partnership program will be sent in 24 hours.</td>
+          <td>-</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+
+
+<!-- Pagination Button -->
+<div class = "container">
+  <div class = "row">
+    <div class = "col-12 text-center py-5">
+      <div class="pagination">
+        <a class = "rounded" href="#">Prev</a>
+        <a href="#" class="mx-1 rounded status-pen">1</a>
+        <a href="#" class = "rounded">2</a>
+        <a href="#" class = "rounded mx-1">Next</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--All Video Review Section-->
+<div class = "container all-video-section">
+  <div class="row">
+    <div class="col">
+      <div class = "mt-3 py-3">
+        <span class = "overview-title">All Video Reviews :</span>
+      </div>    
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-lg-2 col-sm-3 col-3 text-center">
+       <div class="position-relative">
+        <span class="mt-2 position-absolute text-white video_text">Sample Video</span>
+        <button class = "mt-5 btn btn-primary position-absolute start-50 top-50 translate-middle view_video_button">View</button>
+        <video class = "videos w-100 rounded" onmouseenter="show();" onmouseleave="hide();">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+        </video>
+       </div>
+    </div>
+    <div class="col-lg-2 col-sm-3 col-3">
+        <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+        </video>
+    </div>
+     <div class="col-lg-2 col-sm-3 col-3">
+        <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+        </video>
+    </div> 
+        <div class="col-lg-2 col-sm-3 col-3">
+        <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+        </video>
+    </div>
+    <div class="col-lg-2 col-sm-3 col-3">
+        <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+        </video>
+    </div>
+
+    <div class="col-lg-2 col-sm-3 col-3">
+      <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+      </video>
+    </div>
+
+    <div class="col-lg-2 col-sm-3 col-3">
+      <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+      </video>
+    </div>
+
+   <!-- View Button in All Video Review Section-->
+    <div class="col-lg-2 col-sm-3 col-3 pb-3 mt-md-3">
+      <div class = "py-sm-5 h-100 text-center rounded view-div">
+        <span>22+<br>Videos</span></br>
+        <button class = "btn mt-1 mt-md-3 mb-2 btn-primary view-button">View</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- All Approved Video Section -->
+
+<div class="container py-4">
+  <div class = "row">
+    <div class="col mt-5 py-3">
+      <span class = "overview-title">All Approved Video Reviews :</span>
+    </div>
+  </div>
+
+  <div class = "row">
+    <div class="col-lg-2 col-sm-3 col-3 text-center">
+      <div class="position-relative">
+        <span class="mt-2 position-absolute text-white video_text">Sample Video</span>
+        <button class = "mt-5 btn btn-primary position-absolute start-50 top-50 translate-middle view_video_button">View</button>
+        <video class = "videos w-100 rounded" onmouseenter="show();" onmouseleave="hide();">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+        </video>
+       </div>
+    </div>
+
+    <div class="col-lg-2 col-sm-3 col-3">
+      <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+      </video>
+    </div>
+
+    <div class="col-lg-2 col-sm-3 col-3">
+      <video class = "videos w-100 rounded">
+          <source class="embed-responsive-item" src="assets/video2.mp4"></source>
+      </video>
+    </div>
+
+    <!-- View Button in All Approved Section-->
+    <div class="col-lg-2 col-sm-3 col-3 pb-2 mt-md-3">
+      <div class = "py-sm-5 h-100 text-center rounded view-div">
+        <span>12+<br>Videos</span></br>
+        <button class = "btn mt-1 mt-md-3 mb-2 btn-primary view-button">View</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<!-- <script type="text/javascript" src = "script.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    // $(".overlay").show();
+    // $(".overlay").delay(1000).fadeOut(5000);
+    document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".overlay").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".overlay").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
+</script>
+</body>
+</html>

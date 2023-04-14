@@ -1,0 +1,1077 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"form",
+				"form-check"
+			],
+			[
+				"text",
+				"text-white"
+			],
+			[
+				"re",
+				"required_field"
+			],
+			[
+				"tex",
+				"textarea"
+			],
+			[
+				"dat",
+				"datepicker3"
+			],
+			[
+				"btn",
+				"btn-apply"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"mod",
+				"modify_schedule"
+			],
+			[
+				"get",
+				"getValue"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"btn_",
+				"btn_request"
+			],
+			[
+				"pad",
+				"padding-left\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"inli",
+				"inline-grid\tdisplay"
+			],
+			[
+				"border-co",
+				"border-color\tproperty"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"border",
+				"border-color\tproperty"
+			],
+			[
+				"act",
+				"action_delete"
+			],
+			[
+				"modal",
+				"modal-footer"
+			],
+			[
+				"modal-",
+				"modal-content"
+			],
+			[
+				"moda",
+				"modal-body"
+			],
+			[
+				"ans",
+				"answer_div"
+			],
+			[
+				"inn",
+				"inner-modal-div"
+			],
+			[
+				"border-bo",
+				"border-bottom\tproperty"
+			],
+			[
+				"mi",
+				"middle_div"
+			],
+			[
+				"d-",
+				"d-block"
+			],
+			[
+				"he",
+				"header_div"
+			],
+			[
+				"hea",
+				"header_inner_div"
+			],
+			[
+				"head",
+				"header_div"
+			],
+			[
+				"titl",
+				"title_text"
+			],
+			[
+				"clos",
+				"close_btn"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"clo",
+				"close_btn"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"te",
+				"technical_interface"
+			],
+			[
+				"badge",
+				"badge-danger"
+			],
+			[
+				"ent",
+				"entry_label"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"o",
+				"Ok"
+			],
+			[
+				"s",
+				"save_btn"
+			],
+			[
+				"box-",
+				"box-shadow\tproperty"
+			],
+			[
+				"tra",
+				"transform\tproperty"
+			],
+			[
+				"bor",
+				"border-style\tproperty"
+			],
+			[
+				"border-bottom",
+				"border-bottom-left-radius\tproperty"
+			],
+			[
+				"border-top",
+				"border-top-left-radius\tproperty"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"con",
+				"connection6"
+			],
+			[
+				"min-",
+				"min-width\tproperty"
+			],
+			[
+				"bac",
+				"background-image\tproperty"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"backg",
+				"background-size\tproperty"
+			],
+			[
+				"background",
+				"background-image\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"mx-",
+				"mx-md-auto"
+			],
+			[
+				"info",
+				"info-text"
+			],
+			[
+				"word",
+				"word-break\tproperty"
+			],
+			[
+				"cust",
+				"customer-video-section"
+			],
+			[
+				"an",
+				"animation-duration\tproperty"
+			],
+			[
+				"pos",
+				"position-absolute"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"onmou",
+				"onmouseleave\tAttr"
+			],
+			[
+				"onMo",
+				"onmouseenter\tAttr"
+			],
+			[
+				"font-",
+				"font-family\tproperty"
+			],
+			[
+				"rounded",
+				"rounded"
+			],
+			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"sel",
+				"selectbox"
+			],
+			[
+				"td",
+				"td\tTag"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"title",
+				"title-text"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"ot",
+				"otp-area"
+			],
+			[
+				"pas",
+				"password-area"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"bo",
+				"border-right\tproperty"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"e_id",
+				"e_id_new"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"e",
+				"e_id"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"co",
+				"connection6"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"pa",
+				"padding-top\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"react",
+				"ReactDOM"
+			],
+			[
+				"pro",
+				"props"
+			],
+			[
+				"Hello",
+				"HelloMessage"
+			],
+			[
+				"React",
+				"ReactDOM"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"sc",
+				"script\tTag"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"margin-",
+				"margin-top\tproperty"
+			],
+			[
+				"div",
+				"div-left"
+			],
+			[
+				"cla",
+				"class_name"
+			],
+			[
+				"clas",
+				"class_name"
+			],
+			[
+				"left",
+				"div_left"
+			],
+			[
+				"class",
+				"class_name"
+			],
+			[
+				"append",
+				"append_class_or_id"
+			],
+			[
+				"tab",
+				"table-caption\tdisplay"
+			],
+			[
+				"text-al",
+				"text-align\tproperty"
+			],
+			[
+				"opt",
+				"option\tTag"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"border-",
+				"border-bottom\tproperty"
+			],
+			[
+				"su",
+				"super\tvertical-align"
+			],
+			[
+				"qui",
+				"que_id"
+			],
+			[
+				"answer",
+				"answer_id"
+			],
+			[
+				"ques",
+				"ques_id"
+			],
+			[
+				"all_dat",
+				"all_data_info"
+			],
+			[
+				"IN",
+				"INTO"
+			],
+			[
+				"I",
+				"INSERT"
+			],
+			[
+				"que",
+				"que_id"
+			],
+			[
+				"choi",
+				"choices_div"
+			],
+			[
+				"table",
+				"table_data"
+			],
+			[
+				"phone",
+				"phone_no"
+			],
+			[
+				"com",
+				"company_name"
+			],
+			[
+				"tabl",
+				"table_date"
+			],
+			[
+				"quest",
+				"question_id"
+			],
+			[
+				"row",
+				"row_que"
+			],
+			[
+				"answ",
+				"answer_arr"
+			],
+			[
+				"arr",
+				"arr2"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Leave Request/index.html",
+			"settings":
+			{
+				"buffer_size": 7840,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Leave Request/style.css",
+			"settings":
+			{
+				"buffer_size": 4772,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 13520,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/assets/js/pending_request.js",
+			"settings":
+			{
+				"buffer_size": 28745,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Pay Modal/index.html",
+			"settings":
+			{
+				"buffer_size": 4593,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 9270,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Transaction/style.css",
+			"settings":
+			{
+				"buffer_size": 2853,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/LAMA/Desktop/Helplama_Dashboard/pending_request/style.css",
+			"settings":
+			{
+				"buffer_size": 11215,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/nps-customer-service/script.js",
+		"/C/Users/LAMA/Desktop/Agent Dashboard/Pay Modal/index.html",
+		"/C/Users/LAMA/Desktop/Agent Dashboard/Hourly Logged/index.html",
+		"/C/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/pay_model/pay_model.php",
+		"/C/Users/LAMA/Desktop/Agent Dashboard/Pay Modal/style.css",
+		"/C/Users/LAMA/Desktop/Nps Feedback Video Review/Front Page/index.html",
+		"/C/Users/LAMA/Desktop/Nps Feedback Video Review/Front Page/style.css",
+		"/C/Users/LAMA/Desktop/Inbound Call/style.css",
+		"/C/Users/LAMA/Desktop/Inbound Call/index.html",
+		"/C/xampp/htdocs/repo-07-agents.helplama.com/code/config/db-config.php",
+		"/C/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/login/agent_login.php",
+		"/C/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/login/a_login.php",
+		"/C/xampp/htdocs/repo-07-agents.helplama.com/code/config/db-connect.php",
+		"/C/xampp/htdocs/repo-06-dashboard.helplama.com/code/config/db-connect.php",
+		"/C/Users/LAMA/Desktop/Helplama_Dashboard/applicant_tracking/index.html",
+		"/C/Users/LAMA/Desktop/Helplama_Dashboard/applicant_tracking/style.css",
+		"/C/Users/LAMA/Desktop/Helplama_Dashboard/login_status_new/index.html",
+		"/C/Users/LAMA/Desktop/Helplama_Dashboard/manage_email/style.css",
+		"/C/Users/LAMA/Desktop/Helplama_Dashboard/manage_email/index.html",
+		"/C/Users/LAMA/Desktop/upload_csv/index.html",
+		"/C/xampp/htdocs/video_review/style.css",
+		"/C/Users/LAMA/Desktop/manage_email/style.css",
+		"/C/Users/LAMA/Desktop/login_status_new/style.css",
+		"/C/Users/LAMA/Desktop/video_review/style.css",
+		"/C/xampp/htdocs/repo-06-dashboard.helplama.com/code/helplama_dashboard/dash/login/dashboard_login.php",
+		"/C/xampp/htdocs/repo-06-dashboard.helplama.com/code/helplama_dashboard/dash/assets/css/select_details.css",
+		"/C/xampp/htdocs/repo-06-dashboard.helplama.com/code/helplama_dashboard/dash/assets/js/pages/select_details/select_details_footer.js",
+		"/C/xampp/htdocs/repo-06-dashboard.helplama.com/code/helplama_dashboard/dash/select_details.php",
+		"/C/xampp/htdocs/radio_button/style.css",
+		"/C/xampp/htdocs/repo-06-dashboard.helplama.com/code/helplama_dashboard/dash/assets/js/pages/select_details/select_details_footer1.js",
+		"/C/xampp/htdocs/pipeline/src/component/StageDiv.js",
+		"/C/Users/LAMA/Desktop/task2/index.php",
+		"/C/xampp/htdocs/Agent-Profile/style.css",
+		"/E/xampp/htdocs/repo-07-agents.helplama.com/code/index.php",
+		"/C/xampp/htdocs/helplama_nps_backup/src/components/Rating.js",
+		"/C/Users/LAMA/Desktop/style.css",
+		"/C/xampp/htdocs/helplama_nps_backup/src/App.js",
+		"/C/xampp/htdocs/Agent-Profile/index.php",
+		"/E/xampp/htdocs/repo-07-agents.helplama.com/code/config/process_functions.php",
+		"/E/xampp/htdocs/repo-07-agents.helplama.com/code/config/db-connect.php",
+		"/E/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/inc/top_header.php",
+		"/E/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/inc/header.php",
+		"/E/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/pending_request/pending_request.php",
+		"/C/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/pay_modal/index.php",
+		"/E/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/logged_hours/logged_hours.php",
+		"/C/xampp/htdocs/react/demo-project/src/App.js",
+		"/C/xampp/htdocs/react/demo-project/src/index.js",
+		"/C/Users/LAMA/Desktop/vedio.html",
+		"/C/Users/LAMA/Desktop/styles.css",
+		"/C/Users/LAMA/Desktop/slider.html",
+		"/C/xampp/htdocs/react/demo-project/public/index.html",
+		"/C/xampp/htdocs/profile",
+		"/C/Users/LAMA/counter-app/public/index.html",
+		"/C/xampp/htdocs/navigation/index.php",
+		"/C/xampp/htdocs/navigation/style.css",
+		"/C/xampp/htdocs/pricing/index.php",
+		"/C/xampp/htdocs/pricing/assets/css/style.css",
+		"/C/xampp/htdocs/testing/index.html",
+		"/C/xampp/htdocs/testing/index.js",
+		"/C/xampp/htdocs/navigation/script.js",
+		"/C/xampp/htdocs/helplama_request_dashboard/index.php",
+		"/C/xampp/htdocs/helplama_request_dashboard/date.html",
+		"/C/xampp/htdocs/helplama_email_forms-master/index.php",
+		"/C/xampp/htdocs/helplama_request_dashboard/script2.js",
+		"/C/xampp/htdocs/helplama_request_dashboard/style.css",
+		"/C/xampp/htdocs/busibud/wp-content/themes/Divi/core/components/data/Utils.php",
+		"/C/xampp/htdocs/busibud/wp-content/themes/Divi/includes/builder/module/Blurb.php",
+		"/C/xampp/htdocs/helplama_paper_form/form.php",
+		"/C/xampp/htdocs/helplama_paper_form/index.php",
+		"/C/xampp/htdocs/helplama_paper_form/assets/js/script2.js",
+		"/C/xampp/htdocs/paperform_dashboard/get.php",
+		"/C/xampp/htdocs/paperform_dashboard/script2.js",
+		"/C/xampp/htdocs/paperform_dashboard/style.css",
+		"/C/xampp/htdocs/paperform_dashboard/index.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"allow-focus",
+			"after",
+			"}\n",
+			"mx-sm-4",
+			";\n",
+			"mx-5"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"mx-md-4",
+			"mx-sm-5"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\LAMA\\Desktop\\Agent Dashboard"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Leave Request/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3937,
+								3937
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1282.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Leave Request/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4503,
+								4503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2825.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6695,
+								6695
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2484.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/xampp/htdocs/repo-07-agents.helplama.com/code/helplama_dashboard/agent/assets/js/pending_request.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28706,
+								28608
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16610.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Pay Modal/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1523,
+								1691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9266,
+								9266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7096.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/LAMA/Desktop/Agent Dashboard/Transaction/style.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2853,
+								2689
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2387.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/LAMA/Desktop/Helplama_Dashboard/pending_request/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								11215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 846.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 71.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

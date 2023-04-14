@@ -1,0 +1,38 @@
+.bg-img{
+	background-size: cover;
+	background-position: bottom;
+  z-index : -1;
+}
+.container_bucket{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.upload-img{
+	width: 139px;
+	height: 108px;
+	margin-top: 110px;
+}
+.uploaded-text{
+	font-family :  Nunito Sans,sans-serif;
+    color: #656161;
+    line-height: 35px;
+    font-size: 26px;
+    margin-bottom: auto;
+}
+.thanks-text{
+	font: normal normal normal 13px/20px Poppins;
+	color: #707070;
+	margin-bottom: auto;
+}
+.social_icon,.social_text{
+	color: #237FF6;
+}
+.social_icon{
+	vertical-align: middle;
+}
+.social_text{
+	font-size: 11px;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}

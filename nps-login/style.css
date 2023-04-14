@@ -1,0 +1,134 @@
+body{
+    background: url(assets/background.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.image-div{
+	margin-top: 27px;
+}
+.image-div img{
+	width: 216px;
+}
+.input-div{
+	margin-top: 63px;
+	max-width: 384px;
+}
+.icon,.icon2{
+	position: absolute;
+	padding: 12px;
+	color: #707070;
+	font-size: 14px;
+}
+.input-field-area{
+	padding-left: 36px;
+	font-family: Roboto;
+	font-size: 15px;
+	color: #848484;
+	line-height: 26px;
+	border : 1px solid #707070 !important;
+}
+.input-field-area:focus{
+	box-shadow: none;
+	border : 1px solid #2C97DE !important;
+}
+.form-group:focus-within #user{
+	color : #2C97DE;
+}
+.submit-button{
+	font-family: Roboto;
+	font-size: 15px;
+	color: #fff;
+	background: #2C97DE;
+	height: 40px;
+	max-width: 384px;
+}
+.success_login{
+	color: #fff;
+	background: #2C97DE;
+}
+.success_login:hover,.success_login:focus{
+	color: #fff;
+}
+.submit-button:focus{
+	background: #2C97DE;
+    color: #fff;
+	box-shadow: none; 
+}
+.forgot{
+	color : #2C97DE;
+	font-family: Roboto;
+	cursor: pointer;
+	margin-top: 16px;
+	text-decoration: none;
+}
+.eye_icon{
+	float: right;
+	margin-top: -28px;
+	color: #707070;
+	font-size: 14px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.title-heading{
+	font-size: 25px;
+	color: #2C97DE;
+	font-family: Roboto;
+}
+.text-div{
+	max-width: 450px;
+}
+.sub-title{
+	color: #707070;
+	font-size: 17px;
+	font-family: Roboto;
+}
+.otp-field-area{
+	max-width: 384px;
+	margin-top: 20px;
+	padding-left: 16px;
+	font-family: Roboto;
+	font-size: 15px;
+	color: #848484;
+	line-height: 26px;
+	border : 1px solid #707070 !important;
+}
+.otp-field-area:focus{
+	box-shadow: none;
+	border : 1px solid #707070 !important;
+}
+
+.otp_eye_icon{
+	float: right;
+	margin-top: -28px;
+	color: #707070;
+	font-size: 14px;
+	margin-right: 50px;
+	cursor: pointer;
+}
+.alert,.alert2,.alert3{
+	display: none;
+	padding: 0.5rem 0.5rem !important;
+	margin-top: 0.5rem !important;
+	margin-bottom: 0.5rem !important;
+	border-radius : 0.25rem !important;
+	border : 1px solid #f5c2c7 !important;
+}
+.alert3{
+	max-width: 384px;
+}
+.success_text{
+	font-size: 18px;
+	font-family: Roboto;
+}
+.check_circle{
+	color: #00FF00;
+	font-size: 34px;
+	vertical-align: sub;
+}
+@media only screen and (max-width: 425px){
+	.otp_eye_icon{
+		margin-right: 16px;
+	}
+}

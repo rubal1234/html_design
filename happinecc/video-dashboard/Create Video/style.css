@@ -1,0 +1,27 @@
+body{
+	font-family: Roboto;
+}
+.create_btn{
+	background : #1492E6;
+	font: normal normal normal 12px/18px Poppins;
+}
+.action_btn{
+	bottom: 75px;
+}
+.title_text{
+	font: normal normal normal 12px/18px Poppins;
+	color: #fff;
+}
+.spinner-border{
+	top : 45%;
+	left: 45%;
+}
+.user_video{
+	object-fit: cover;
+}
+
+@media (min-width: 576px){
+	.user_video{
+		object-fit: none;
+	}
+}

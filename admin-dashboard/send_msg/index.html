@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
+    <link rel="stylesheet" href="repo6.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container mt-5 mb-2 rounded bg-white py-3">
+    <!-- Top heading div -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="heading" id="sd-main">Send Message</h3>
+      </div>
+    </div>
+
+    <div class="row mt-3 px-3 py-3">
+      <div class="col-12 col-sm-6">
+        <h2 class="inner-heading">Send Message</h2>
+      </div>
+    </div>
+
+    <div class="row mt-3 px-3 py-3">
+      <div class="col-12 col-sm-6">
+        <button type="button" class="btn btn-primary d-none d-sm-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Random Messages</button>
+      </div>
+      <div class="col-12 col-sm-6 text-end">
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Filter results">
+        <datalist id="datalistOptions">
+          <option value="San Francisco">
+          <option value="New York">
+          <option value="Seattle">
+          <option value="Los Angeles">
+          <option value="Chicago">
+        </datalist>
+      </div>
+    </div>
+
+
+    <div class="row px-3">
+      <div class="col-sm-12 mx-auto">
+        <div class = "ResultsTable__wrapper mt-4">
+        <table class="ResultsTable ResultsTable--sortable">
+            <thead>
+              <tr>
+                  <th>E_id</th>
+                  <th>Agent Name</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Messages</th>
+                  <th>Send</th>
+                  <th>History</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                  <td style="width: 15%;">4940</td>
+                  <td  style="width:20%;">Random Number</td>
+                  <td>15039152957</td>
+                  <td>null</td>
+                  <td>
+                    <div class="form-floating">
+                      <textarea class="form-control" id="floatingTextarea2" style="height: 60px"></textarea>
+                      <label for="floatingTextarea2">messages</label>
+                    </div>
+                  </td>
+
+                  <td>
+                    <button class="btn btn-primary" onclick="alertme()">Send</button>
+                  </td>
+
+                  <td>
+                    <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">History</button>
+                  </td>
+            </tr>
+            <tr>
+              <td style="width: 15%;">4937</td>
+              <td  style="width:20%;">Random Number</td>
+              <td>13146099112</td>
+              <td>null</td>
+              <td>
+                <div class="form-floating">
+                  <textarea class="form-control" id="floatingTextarea2" style="height: 60px"></textarea>
+                  <label for="floatingTextarea2">messages</label>
+                </div>
+              </td>
+
+              <td>
+                <button class="btn btn-primary" onclick="alertme()">Send</button>
+              </td>
+
+              <td>
+                <button class="btn btn-danger d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">History<i class="fas fa-envelope" style="color: rgb(67, 194, 29);"></i></button>
+              </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+      </div>
+    </div>  
+
+    <div class="row mt-3 px-3 py-3 text-end">
+      <div class="col-12 col-sm-12">
+        <button type="button" class="btn btn-secondary">Prev</button>
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">Next</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal-random-messages -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1" style="background-color: transparent;border: 0px;">
+                <select id="cc-picker">
+                  <option value="1">+91</option>
+                </select>
+              </span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating">
+              <textarea class="form-control" id="floatingTextarea2" style="height: 60px"></textarea>
+              <label for="floatingTextarea2">Enter message</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="alertme()">Send</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal-history-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-muted" id="exampleModalLabel">History</h5>
+      
+          <label class="switch">
+            <input type="checkbox" id="togBtn">
+            <div class="slider round">
+             <span class="on">Read</span>
+             <span class="off">Unread</span>
+            </div>
+           </label>
+      
+    
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="display-5 history-modal-text">NO DATA FOUND</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="repo6.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
+    <link rel="stylesheet" href="repo7.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Top heading div -->
+  <div class="row ms-5 mt-4 ps-4">
+    <div class="col-12">
+      <h3 class="heading" id="sd-main">Manage slots</h3>
+    </div>
+  </div>
+  <div class="container mt-3 mb-2 bg-white py-3" style="border-radius: 25px;">
+
+    <div class="row px-3 py-3">
+      <div class="col-12 col-sm-6">
+        <h2 class="inner-heading">Manage slots</h2>
+      </div>
+    </div>
+
+
+
+    <div class="row px-3">
+      <div class="col-sm-12 mx-auto">
+        <div class = "ResultsTable__wrapper mt-4">
+        <table class="ResultsTable ResultsTable--sortable">
+            <thead>
+              <tr>
+                  <th>Company</th>
+                  <th>START</th>
+                  <th>END</th>
+                  <th>DAY</th>
+                  <th>Action</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <td class="text-center">
+                <button type="button" class="btn btn-info text-white">Add New Slot</button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-success">Save</button>
+              </td>
+              <td></td>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="1">Busibud</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td style="width: 20%;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                </td>
+                <td style="width: 20%;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                </td>
+                <td style="width: 30%;">
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      M
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      T
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      W
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      T
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      F
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      S
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      S
+                    </label>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn btn-danger mt-2" onclick="myfunc()">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="1">Busibud</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td style="width: 20%;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                </td>
+                <td style="width: 20%;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                </td>
+                <td style="width: 30%;">
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      M
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      T
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      W
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      T
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      F
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      S
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      S
+                    </label>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn btn-danger mt-2" onclick="myfunc()">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected value="1">Select company</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </td>
+                <td style="width: 20%;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                </td>
+                <td style="width: 20%;">
+                  <div class="input-group">
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                </td>
+                <td style="width: 30%;">
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      M
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      T
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      W
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      T
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      F
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      S
+                    </label>
+                  </div>
+                  <div class="form-check days">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      S
+                    </label>
+                  </div>
+                </td>
+                <td class="text-center">
+                  <button class="btn btn-danger mt-2" onclick="myfunc()">Delete</button>
+                </td>
+              </tr>
+        </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="repo7.js"></script>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
+    <link rel="stylesheet" href="repo6.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container" style="background: #f79c82">
+      <div class="row">
+          <div class="col-12 text-center">
+            <img src="logo_pogo.png">
+          </div>
+      </div>
+      </div>
+      <div class="container mt-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p id="test_heading">Company's Mock Test</p>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5 mb-2 px-5 rounded bg-white py-3">
+        <div class="row">
+            <div class="col-6">
+                <p style="font-weight: bold;">Select chat:</p>
+                <select class="form-select" aria-label="Default select example" style="width: 40%;">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+            <div class="col-6">
+                <p style="font-weight: bold;">Manage chat id file</p>
+                <button type="button" class="btn btn-primary px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Manage</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <p style="font-size: larger; color: grey;">Mock chat flow</p>
+            </div>
+            <div class="col-6 text-end pe-5">
+                <button type="button" class="btn btn-primary px-5" data-bs-toggle="modal" data-bs-target="#exampleModal2">Question</button>
+                <button type="button" class="btn btn-primary px-5">Show all links</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4">
+                <div class="row">
+                    <p style="font-weight: bold;">Ques-1</p>
+                </div>
+                <div class="row">
+                    <p style="font-size: 20px;">Do you sell your kennel buildings in Iowa? or do you have a location closer?</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Told them that we have a location close to Iowa
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Told them we're online but we do deliver to Iowa
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Couldn't find the information and took down their email
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      None of the above
+                    </label>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <p style="font-weight: bold;">Ques-2</p>
+                </div>
+                <div class="row">
+                    <p style="font-size: 20px;">Would you be able to give more info on the 8 run dog kennel? How long is lead time to have one built?</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Told them it takes about 3 weeks to build and ship
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Couldn't find the information and took down their email
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      None of the above
+                    </label>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <p style="font-weight: bold;">Ques-3</p>
+                </div>
+                <div class="row">
+                    <p style="font-size: 20px;">I wanted an 8 run kennel with a feed room. Is it just longer than the standard 8 run kennel? What would be the dimensions of the feed room?</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Told them the dimension of feed room from catalogue
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Told them the dimension of feed room from catalogue and told them we can customize everything for them
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Couldn't find the information and took down their email
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      None of the above
+                    </label>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4">
+                <div class="row">
+                    <p style="font-weight: bold;">Ques-4</p>
+                </div>
+                <div class="row">
+                    <p style="font-size: 20px;">So if you add a feed room is there still 8 runs and it's just a longer building</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Told them that the building will be the same length
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Told them we can customize the building according to their requirement, upto 60 feet in length
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Couldn't find the information and took down their email
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      None of the above
+                    </label>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <p style="font-weight: bold;">Ques-5</p>
+                </div>
+                <div class="row">
+                    <p style="font-size: 20px;">My email id is jane@gmail.com</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Assured them that somebody would reach out to them
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      None of the above
+                    </label>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <p style="font-weight: bold;">Ques-6</p>
+                </div>
+                <div class="row">
+                    <p style="font-size: 20px;">My email id is jane@gmail.com</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Assured them that somebody would reach out to them
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      None of the above
+                    </label>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4">
+                <div class="row">
+                    <p style="font-weight: bold;">Ques-7</p>
+                </div>
+                <div class="row">
+                    <p style="font-size: 20px;">My email id is jane@gmail.com</p>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Assured them that somebody would reach out to them
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      None of the above
+                    </label>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <button type="button" class="btn btn-light">Save all data</button>
+            </div>
+        </div>
+      </div>
+      <!-- Modal chat file -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MOCK CHAT'S FILE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 300px;"></textarea>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" style="width: 100%;">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- Modal chat test -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MOCK CHAT'S FILE</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container mb-2 px-5 rounded bg-white py-3 qa-box">
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <p class="text-muted">Always sortable</p>
+                        <div class="row px-4 mt-3" style="margin-left: 80%;">
+                            <label class="switch">
+                              <input type="checkbox" id="togBtn">
+                              <div class="slider round">
+                               <span class="on">on</span>
+                               <span class="off">off</span>
+                              </div>
+                             </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <p><strong>Question</strong></p>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <input class="form-control" type="text" value="Do you sell your kennel buildings in Iowa? or do you have a location closer?" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-secondary">Add Ques</button>
+                    </div>
+                    <div class="col-1">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="Told them that we have a location close to Iowa" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-secondary">Add Ans</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="Told them we're online but we do deliver to Iowa" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-secondary">Add Ans</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="Couldn't find the information and took down their email" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-secondary">Add Ans</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="None of the above" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-secondary">Add Ans</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+            </div>
+            <div class="container mb-2 px-5 rounded bg-white py-3 qa-box">
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <p class="text-muted">Always sortable</p>
+                        <div class="row px-4 mt-3" style="margin-left: 80%;">
+                            <label class="switch">
+                              <input type="checkbox" id="togBtn">
+                              <div class="slider round">
+                               <span class="on">on</span>
+                               <span class="off">off</span>
+                              </div>
+                             </label>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <p><strong>Question</strong></p>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <input class="form-control" type="text" value="My email id is jane@gmail.com" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-secondary">Add Ques</button>
+                    </div>
+                    <div class="col-1">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="Assured them that somebody would reach out to them" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-secondary">Add Ans</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <input class="form-control" type="text" value="None of the above" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-outline-secondary">Add Ans</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary"><i class="far fa-trash-alt"></i></button>
+
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" style="width: 100%;">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="repo6.js"></script>
+</body>
+</html>

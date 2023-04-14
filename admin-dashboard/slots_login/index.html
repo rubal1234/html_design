@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slots Login</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container mt-5 rounded bg-white py-3">
+  	   <!-- Top heading div -->
+	    <div class="row">
+	      <div class="col-12">
+	        <h3 class="heading">Select Details</h3>
+	      </div>
+	    </div>
+        
+        <!--Inner Heading -->
+	    <div class="row mt-3 px-3 py-3">
+	      <div class="col-12 col-sm-6">
+	        <h2 class="inner-heading">Select Details</h2>
+	      </div>
+	      <div class="col-12 col-sm-6 text-end">
+	        <i class="fas fa-sync-alt mx-2 icons"></i>
+	        <i class="fas fa-expand-arrows-alt mx-2 icons"></i>
+	        <i class="fas fa-ellipsis-h mx-2 icons"></i>
+	      </div>
+        </div>
+        
+        <!--Freelancer div -->
+        <div class="row px-5 py-3 ">
+	      <div class="col-md-5 col-sm-6">
+		      	<div class="form-group">
+		      	    <label class="mb-2" for="free">Select Freelancer:</label>
+		      	    <div class="form-control select_div" name="e_id" id="search_freelancers" data-select2-id="select2-data-search_freelancers" tabindex="-1" aria-hidden="true">
+		      	   	    <div class="text-end">
+		      	   	       <i class="fas fa-caret-down text-end caret-icon"></i>
+		      	   	    </div>
+		            </div>
+		            
+		            <div class="form-control search_div">
+	            	    <input type="text" name="" class="form-control search_input">
+	            	    <p class="my-2 mb-auto suggested-info">Please enter 1 or more characters</p>
+	                </div>
+
+	            </div>
+	        </div>
+
+	        <div class="col-md-3 col-sm-6 mx-md-5">
+	        	<div class="form-group">
+	        		<label class="mb-2">Profile Login:</label>
+	        	</div>
+	        	<button class="btn btn-default login_btn text-white w-75">Login</button>
+	        </div>
+	    </div>
+
+	    <!-- Chat session div -->
+	    <div class="row py-2">
+	    	<div class="col-sm-5 text-center">
+	    		<h2 class = "chat_session_heading">Chat session</h1>
+	    	</div>
+	    </div>
+	    <!--Slots information -->
+	    <div class="row px-3 py-3">
+	    	<div class="col-sm-12">
+	    		<div class="button_div d-flex">
+	    			<div class="col-md-2 col-sm-3 col-4 trapezoid text-center position-relative" onclick="get_time_slot(this,'today');">
+	    				<p class="tab_link py-3">Today Slot</p>
+	    			</div>
+	    			<div class="col-md-2 col-sm-3 col-4 trapezoid-middle w3-middle text-center position-relative">
+	    				<p class="tab_link py-3" onclick="get_time_slot(this,'extra');">Extra Slot</p>
+	    			</div>
+	    			<div class="col-md-2 col-sm-3 col-4 trapezoid-last w3-middle text-center position-relative" onclick="get_time_slot(this,'old');">
+	    				<p class="tab_link py-3">Old Slot</p>
+	    			</div>
+	    		</div>
+	    		<div class="col-md-6 col-sm-9 information-div">
+	    			<p class="text-center data-info">No data available</p>
+                    <div class = "ResultsTable__wrapper">
+                         <table class="ResultsTable ResultsTable--sortable text-center">
+                         	<tbody>
+                         		<tr>
+                         		  
+                         		</tr>
+                         	</tbody>
+                         </table>
+                    </div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on("click","#search_freelancers",function(e){
+			var style_text = $(".search_div").css("display");
+			if(style_text == "none"){
+				$(".search_div").show();
+			    $(".search_input").focus();
+			    $(".caret-icon").addClass("caret-icon-open");
+			}else{
+				$(".search_div").hide();
+			    $(".caret-icon").removeClass("caret-icon-open");
+			}
+			
+		})
+
+		function get_time_slot(e,text){
+			if(text == "today"){
+				$(".trapezoid").addClass("w3-red");
+				$(".trapezoid-middle").removeClass("w3-red");
+				$(".trapezoid-last").removeClass("w3-red");
+			}else if(text == "extra"){
+				$(".trapezoid-middle").addClass("w3-red");
+				$(".trapezoid").removeClass("w3-red");
+				$(".trapezoid-last").removeClass("w3-red");
+			}else{
+				$(".trapezoid-last").addClass("w3-red");
+				$(".trapezoid").removeClass("w3-red");
+				$(".trapezoid-middle").removeClass("w3-red");
+			}
+			$(".ResultsTable__wrapper").show();
+			$(".data-info").hide();
+		}
+
+		$(document).ready(function(e){
+			    var company_name = "<td>Busibud</td>";
+			 	var time = "<td>03:00AM--06:00PM</td>";
+				var login_btn = "<td><div class = 'text-center'><button class = 'btn btn-default login_btn text-white rounded-pill px-3' id = 'login_btn'>Login</button></div></td>";
+				var html = "<tr></tr>";
+				$(".ResultsTable tbody").append(html);
+				$(".ResultsTable tbody:last-child").append(company_name,time,login_btn);
+		})
+	</script>
+</body>
+</html>

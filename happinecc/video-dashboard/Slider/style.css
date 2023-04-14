@@ -1,0 +1,48 @@
+body{
+	font-family: Roboto;
+}
+.container_bucket{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.bg-img{
+	background-size: cover;
+	background-position: bottom;
+    z-index : -1;
+}
+.back_btn{
+	background: #1492E6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 5px;
+    font-size: 13px;
+    font: normal normal normal 13px/18px Nunito Sans;
+    color: #FDFDFD;
+}
+.slider_heading{
+	font: normal normal bold 12px/18px Poppins;
+    color: #000;
+}
+.steps-div{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 7px;
+}
+.step-no-div{
+	background: #F1BBBB 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border-radius: 0px 13px 13px 13px !important;
+    margin-top: -18px;
+    margin-left: 10px;
+    padding: 2px 22px 2px;
+}
+.step-text{
+	font: normal normal bold 12px/18px Poppins;
+}
+.step-no-text{
+	color: #fff;
+	font: normal normal normal 15px/14px Poppins;
+}
+.text-indicator{
+	font: normal normal bold 12px/18px Poppins;
+    color: #5A5A5A;
+}

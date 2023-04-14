@@ -1,0 +1,132 @@
+body{
+  font-family: Roboto;
+}
+#top-header{
+	margin: 0;
+	padding: 0 !important;
+	width: 100%;
+/*	box-shadow: 0px 3px 6px #00000029;*/
+	height : 75px;
+	transition: 0.5s;
+  margin-left: 250px;
+  position: fixed;
+  background : white;
+  z-index: 100000;
+}
+.menu_Icon{
+	background : none !important;
+	border : none !important;
+	width: 51px;
+	height: 51px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.menu_Icon img{
+  width: 22px;
+}
+.menu_Icon:hover{
+	background : #F5F5F5 !important;
+	transition: 0.5s ease-in-out;
+}
+
+.sidepanel  {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #F8F8F8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  /*box-shadow: 0px 3px 6px #00000029;*/
+}
+.main-content{
+  margin-left: 250px;
+  background : #f1f1f1;
+}
+.call-detail-heading{
+  font-size: 22px;
+  color: #5a5a5a;
+  margin-top: 75px;
+}
+.inner-heading{
+  font-size : 18px;
+}
+.ResultsTable__wrapper{
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    position: relative;
+}
+.ResultsTable {
+    min-width: calc(100% - 2px);
+    border-collapse: collapse;
+}
+.ResultsTable--sortable {
+    table-layout: fixed;
+}
+
+.ResultsTable thead th {
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #444;
+    font-weight: bold;
+    font-family: Verdana,sans-serif;
+}
+
+.ResultsTable td, .ResultsTable th {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.ResultsTable th {
+    text-align: left;
+    white-space: nowrap;
+    padding: 14px 18px;
+    font-size: 14px;
+    border-bottom : 2px solid #ccc; 
+}
+.ResultsTable--sortable th:first-child, .ResultsTable--sortable th:nth-child(2) {
+    min-width: initial;
+}
+.ResultsTable td{
+  padding: 24px 18px;
+}
+.call-img{
+  width: 24px;
+}
+.action_btn{
+  background-image: linear-gradient(to left,#FF8F73, #F2547D);
+}
+.pagination-buttons a{
+  color: #666;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  background: #efefef;
+  text-align: center;
+  border: 1px solid #bbb;
+  min-width: 14px;
+  padding: 2px 7px;
+  margin: 0 5px 0 0;
+  text-decoration: none;
+}
+.active{
+    background: #666 !important;
+    color: #fff !important;
+    border-color: #444 !important;
+    box-shadow: 0 1px 0 #fff, 0 0 2px rgb(0 0 0 / 30%) !important; 
+}
+@media only screen and (max-width: 1200px){
+  .sidepanel{
+    width: 0px;
+  }
+  #top-header{
+    margin-left: 0;
+  }
+  .main-content{
+   margin-left: 0; 
+  }
+}

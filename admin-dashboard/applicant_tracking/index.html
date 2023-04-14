@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Applicant Tracking</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+	<div class="container mt-5 rounded bg-white py-3 mb-2 manage_applicant">
+		<div class="row">
+			<div class="col-5">
+				<h1 class="applicant_tracking_heading">Manage applicant tracking</h1>
+			</div>
+		</div>
+
+		<div class="row mt-5 py-2">
+			<div class="col-6 col-md-6">
+				<button class="btn btn-primary add_process">Add new process</button>
+			</div>
+		</div>
+
+		<div class="row justify-content-end">
+			<div class="col-md-6 col-12">
+				<input type="text" name="" class="form-control" placeholder="Filter results">
+			</div>
+		</div>
+
+		<div class="row">
+	    	<div class="col-12">
+	    		<div class = "ResultsTable__wrapper mt-4">
+                   <table class="ResultsTable ResultsTable--sortable table">
+			            <thead>
+			              <tr>
+			                  <th>Proccess name</th>
+			                  <th>Action</th>
+			                  <th>Copy Url</th>
+			              </tr>
+			            </thead>
+			            <tbody>
+			            	<tr>
+			            		<td>
+			            			<input type="text" name="" class="form-control" readonly="" value = "Technical interview">
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-primary config">Config</button>
+			            		</td>
+			            		<td>https://portal.busibud.com/app/applicantForm/139169</td>
+			            	</tr>
+
+			            	<tr>
+			            		<td>
+			            			<input type="text" name="" class="form-control" readonly="" value = "Technical interview">
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-primary config">Config</button>
+			            		</td>
+			            		<td>https://portal.busibud.com/app/applicantForm/139169</td>
+			            	</tr>
+			            	<tr>
+			            		<td>
+			            			<input type="text" name="" class="form-control" readonly="" value = "Technical interview">
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-primary config">Config</button>
+			            		</td>
+			            		<td>https://portal.busibud.com/app/applicantForm/139169</td>
+			            	</tr>
+
+			            	<tr>
+			            		<td>
+			            			<input type="text" name="" class="form-control" readonly="" value = "Technical interview">
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-primary config">Config</button>
+			            		</td>
+			            		<td>https://portal.busibud.com/app/applicantForm/139169</td>
+			            	</tr>
+			            </tbody>
+			        </table>
+			    </div>
+			</div>
+		</div>
+		 <!-- Pagination button -->
+		<div class="row px-3 py-3">
+			<div class="col-12 gap-2 justify-content-end d-flex">
+				    <a class="page_link prev current" href="#">Previous</a>
+				    <a class="page_link current" href="#">1</a>
+				    <a class="page_link" href="#">2</a>
+				    <a class="page_link" href="#">3</a>
+				    <a class="page_link next" href="#">Next</a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- On clicking config button this interface will open -->
+
+	<div class="container mt-5 rounded bg-white technical_interface py-3 mb-2">
+		<div class="row">
+			<div class="col-5">
+				<h1 class="applicant_tracking_heading">Technical Interview</h1>
+			</div>
+		</div>
+		<div class="row mt-5 py-2">
+			<div class="col-md-4">
+				<button class="btn btn-primary back_btn px-2"><i class="fas fa-angle-double-left"></i></button>
+			</div>
+		</div>
+		<div class="row mt-1">
+			<div class="col-md-6 col-12">
+				<select class="form-select stage_select">
+					<option>Select stage</option>
+					<option>form-fill</option>
+					<option>mock chat schedule</option>
+					<option>profile access</option>
+					<option>msg_text</option>
+					<option>training_material</option>
+					<option>contract</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Table section -->
+		<div class="row">
+	    	<div class="col-12">
+	    		<div class = "ResultsTable__wrapper mt-4">
+                   <table class="ResultsTable ResultsTable--sortable table technical_interface_table">
+			            <thead>
+			              <tr>
+			                  <th>Stage name</th>
+			                  <th>Name</th>
+			                  <th>order</th>
+			                  <th>Auto next</th>
+			                  <th>Next email</th>
+			                  <th>Action</th>
+			                  <th>subject text</th>
+			                  <th>email text</th>
+			                  <th>phone_text</th>
+			                </tr>
+			            </thead>
+			            <tbody>
+			            	<tr>
+			            		<td>profile not created</td>
+			            		<td><input type="text" name="" class="form-control" value = "Created"></td>
+			            		<td>1</td>
+			            		<td><label class="switch start-50" style=""> <input type="checkbox" checked=""> <span class="slider round"></span> </label></td>
+			            		<td>
+			            			<label class="switch start-50" style=""> <input class="next_email" type="checkbox"> <span class="slider round"></span> </label>
+			            			<p class="validation_text"></p>
+			            		</td>
+			            		<td>
+			            			<div class="text-center">
+			            				<button class="btn btn-danger action_delete">Delete</button>
+			            				<button class="btn btn-primary mt-2 action_config">Config</button>
+			            			</div>
+			            		</td>
+			            		<td>
+			            			<textarea class="form-control" placeholder="Subject cannot be empty">123</textarea>
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-primary config_email">Config email</button>
+			            		</td>
+			            		<td>
+			            			<textarea class="form-control"></textarea>
+			            		</td>
+			            	</tr>
+
+			            	<tr>
+			            		<td>profile not created</td>
+			            		<td><input type="text" name="" class="form-control" value = "Created"></td>
+			            		<td>1</td>
+			            		<td><label class="switch start-50" style=""> <input type="checkbox"> <span class="slider round"></span> </label></td>
+			            		<td>
+			            			<label class="switch start-50" style=""> <input class="next_email" type="checkbox"> <span class="slider round"></span> </label>
+			            			<p class="validation_text"></p>
+			            		</td>
+			            		<td>
+			            			<div class="text-center">
+			            				<button class="btn btn-danger action_delete">Delete</button>
+			            				<button class="btn btn-primary mt-2 action_config">Config</button>
+			            			</div>
+			            		</td>
+			            		<td>
+			            			<textarea class="form-control" placeholder="Subject cannot be empty"></textarea>
+			            		</td>
+			            		<td>
+			            			<button class="btn btn-primary config_email">Config email</button>
+			            		</td>
+			            		<td>
+			            			<textarea class="form-control"></textarea>
+			            		</td>
+			            	</tr>
+			            </tbody>
+			        </table>
+			    </div>
+			</div>
+	    </div>
+	</div>
+
+
+	    <!-- The Modal -->
+	    <div id="myModal" class="modal">
+	        <div class="modal-content d-block">
+	         </div>
+	    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    $(document).on("click",".add_process",function(e){
+	    var modal_header = '<div class = "modal-header"></div>';
+	    $(".modal-content").append(modal_header);
+
+	    var modal_body = '<div class = "modal-body d-flex align-items-center"></div>';
+	    $(".modal-content").append(modal_body);
+
+	    var modal_footer = '<div class = "modal-footer"></div>';
+	    $(".modal-content").append(modal_footer);
+
+	    var title = '<span class = "modal-title">Details</span>';
+        var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+        $(".modal-header").append(title,close_btn);
+
+        var textarea = '<textarea class = "form-control w-75"></textarea>';
+        var save_btn = '<button class = "btn btn-primary h-100 ms-4">Save</button>';
+        $('.modal-body').append(textarea,save_btn);
+
+        var close_btn = '<button class = "btn btn-danger close text-white">Close</button>';
+        $(".modal-footer").append(close_btn);
+        $(".modal").show();
+    })
+     
+    $(document).on("click",".action_config",function(e){
+    	$(".modal-content").css({
+    		"width":"80%"
+    	})
+    	var modal_header = '<div class = "modal-header d-block"></div>';
+	    $(".modal-content").append(modal_header);
+
+	    var modal_body = '<div class = "modal-body"></div>';
+	    $(".modal-content").append(modal_body);
+
+	    var modal_footer = '<div class = "modal-footer"></div>';
+	    $(".modal-content").append(modal_footer);
+
+	    var title_text = '<span style = "color:#707070;font-size:18px;">Form Config</span>';
+	    var header_div = '<div class = "header_inner_div px-4 row mt-5"></div>';
+	    var left_panel = '<div class = "col-6"><label>Select form type</label><select class = "form-select"><option>Select question type</option></select></div>';
+
+	    var middle_div = '<div class = "col-5 text-center"><label>Questions Sortable</label><br><label class="switch mt-1" style="margin-left:45px;"><input class="next_email" type="checkbox"> <span class="slider round ml-4"></span></label></div>';
+
+	    var right_panel = '<div class = "col-1"><i class="fas fa-times float-end close fw-bold"></i></div>';
+	    $(".modal-header").append(title_text,header_div);
+	    $('.header_inner_div').append(left_panel,middle_div,right_panel);
+        
+        for(var i=0;i<5;i++){
+	    var modal_div = '<div class = "row inner-modal-div mt-4 py-2  align-items-center"></div>';
+	    var required_div = '<div class = "col-12 py-2"><span class = "btn-success py-2 px-3 rounded">Required</span></div>';
+	    var answer_div = '<div class = "col-8 px-5 mt-2"><label>short answer question</label><input type = "text" class = "form-control"></div>';
+	    var delete_btn = '<div class = "col-4 text-end mt-2"><button class = "mt-2 btn btn-default delete_btn "><i class="fas fa-trash-alt"></i></button></div>';
+	    $(".modal-body").append(modal_div);
+	    $(".inner-modal-div:last-child").append(required_div,answer_div,delete_btn);
+	    }
+
+	    var save_btn = '<button class = "btn btn-default w-100 save_btn">Save</button>';
+	    $(".modal-footer").append(save_btn);
+    	$(".modal").show();
+    })
+
+    $(document).on("click",".config_email",function(e){
+    	var modal_header = '<div class = "modal-header d-block"></div>';
+	    $(".modal-content").append(modal_header);
+
+	    var modal_body = '<div class = "modal-body"></div>';
+	    $(".modal-content").append(modal_body);
+
+	    var modal_footer = '<div class = "modal-footer"></div>';
+	    $(".modal-content").append(modal_footer);
+
+	    var bold_btn = '<button class = "btn btn-primary">B</button>';
+	    var italic_btn = '<button class = "btn btn-success ms-2">I</button>';
+	    var textarea = '<textarea class = "form-control mt-2 h-100"></textarea>'
+	    $(".modal-body").append(bold_btn,italic_btn,textarea);
+
+	    var close_btn = '<button class = "btn btn-default close_btn close">Close</button>';
+	    $(".modal-footer").append(close_btn);
+
+    	$(".modal").show();
+    }) 
+
+    $(document).on("click",".delete_btn",function(e){
+    	$(this).parent().parent().remove();
+    })
+
+    $(document).on("click",".action_delete",function(e){
+    	swal({
+		  title: "Are you sure?",
+		  text: "Once deleted, you will not be able to recover this imaginary file!",
+		  icon: "warning",
+		  buttons: true,
+		  dangerMode: true,
+		})
+    })
+    $(document).on("click",".close",function(e){
+    	$(".modal").hide();
+    	$(".modal-header").remove();
+    	$(".modal-body").remove();
+    	$(".modal-footer").remove();
+    	$(".modal-content").css({
+    		"width":"50%"
+    	})
+    })
+    $(document).on("change",".stage_select",function(e){
+    	swal("New Stage Submit Successfully", "", "success");
+    })
+
+
+    $(document).on("click",".config",function(e){
+    	$(".manage_applicant").hide();
+    	$(".technical_interface").show();
+    })
+
+    $(document).on("click",".back_btn",function(e){
+    	$(".manage_applicant").show();
+    	$(".technical_interface").hide();
+    })
+
+
+	$(document).on('change','.next_email',function(event){
+
+
+        var this_data_self= $(this);
+
+        if ($(this).prop('checked')) 
+        {
+            
+            this_data_self[0].parentElement.nextElementSibling.innerText = "Subject and email text cannot be empty";
+        }
+        else
+        {
+            
+            this_data_self[0].parentElement.nextElementSibling.innerText = "";
+
+        }
+
+
+    });
+</script>
+</body>
+</html>

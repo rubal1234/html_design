@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pending Request</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+
+</head>
+<body>
+
+    <!--Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg commonBox_shadow" id = "top-header">
+      <div class="col-4  d-flex btn_BG">
+          <button type="button" id="sidebarCollapse" class="menu_Icon">
+              <img  src="https://img.icons8.com/material-rounded/36/707070/menu--v1.png" alt="hamburger menu" onclick="toggleNav()"/>
+          </button>
+        </div>
+    </nav>
+
+    <!-- Side Navigation Bar -->
+
+    <div id="mySidepanel" class="sidepanel">
+    </div>
+
+    <div class="main-content px-3 py-2">
+    	<div class="container">
+		  	<div class="row px-md-4 pt-2">
+		  		<div class="col-12 py-3 px-2">
+		  			<h2 class="heading fw-bold">Pending Request Status</h2>
+		  		</div>
+		  	</div>
+
+		  	<!--Select date div -->
+			<div class="row py-2 px-md-4 mt-1">
+				<div class="col-lg-7 col-md-12 col-sm-12 d-sm-flex">
+
+				   <label class="py-2 label_text">Search by Date: From:</label>
+				   <div class="position-relative d-flex">
+				        <input type="text" id="datepicker" placeholder="Select a date" class="form-control Search__input rounded ms-md-4 ms-sm-1" autocomplete="off"><span id="basic-addon2"><i class="fas fa-calendar-alt position-absolute end-0 me-md-3 me-3  mt-2 pt-1" id = "datepicker"></i></span>
+				   </div>
+				    <label class="py-2 label_text ms-sm-4">to:</label>
+				    <div class="position-relative d-flex">
+				       <input type="text" id="datepicker2" placeholder="Select a date" class="form-control Search__input rounded ms-md-4 ms-sm-1" autocomplete="off"><span  id="basic-addon2"><i class="fas fa-calendar-alt position-absolute end-0 me-md-3 me-3 mt-2 pt-1" id = "datepicker2"></i></span>
+                    </div>
+				</div>
+
+				<div class=" col-lg-2 col-sm-4 col-3  mt-2 mt-lg-0 text-left">
+					<button class="btn btn_clear text-white px-4">Clear</button>
+				</div>
+			</div>
+
+		 <!--Table Section -->
+	   	    <div class="row mt-3">
+	   	    	<div class="col-12 px-md-4 mx-md-2">
+	   	    		<div class = "ResultsTable__wrapper">
+		   	       	    <table class = "ResultsTable ResultsTable--sortable">
+		   	       	 	    <thead>
+		   	       	 		    <tr>
+		   	       	 			    <th>
+		   	       	 				  <div class="dropdown">
+										  <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+										    Category
+										  </button>
+										   <ul class="dropdown-menu checkbox-menu px-3">
+											    <div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+												  <label class="form-check-label ps-2" for="flexCheckDefault">
+												    Extra Shift
+												  </label>
+												</div>
+												<div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+												  <label class="form-check-label ps-2" for="flexCheckDefault2">
+												    Logged Hours
+												  </label>
+												</div>
+												<div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+												  <label class="form-check-label ps-2" for="flexCheckDefault3">
+												    Review Pay Model
+												  </label>
+												</div>
+												<div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+												  <label class="form-check-label ps-2" for="flexCheckDefault4">
+												    Leave
+												  </label>
+												</div>
+												<div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+												  <label class="form-check-label ps-2" for="flexCheckDefault4">
+												    modify_schedule
+												  </label>
+												</div>
+												<div class="form-check text-end pt-2 pb-3">
+													<button class="btn btn-apply">Apply</button>
+												</div>
+											</ul>
+										</div>
+		   	       	 			    </th>
+		   	       	 			    <th>Description</th>
+		   	       	 			    <th>Date of request</th>
+		   	       	 			    <th>
+		   	       	 			    	<div class="d-flex justify-content-between align-items-center">
+		   	       	 			    		<div class="dropdown">
+											  <button class="btn text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+											    Status
+											  </button>
+											  <ul class="dropdown-menu px-3" aria-labelledby="dropdownMenuButton1">
+											    <div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault4">
+											  	  <span class="status-rej"></span>
+												  <label class="form-check-label ps-1" for="flexCheckDefault4">
+												    Rejected
+												  </label>
+												</div>
+											    <div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault4">
+											  	  <span class="status-app"></span>
+												  <label class="form-check-label ps-1" for="flexCheckDefault4">
+												    Approved
+												  </label>
+												</div>
+												<div class="form-check d-flex align-items-center">
+											  	  <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault4">
+											  	  <span class="status-pen"></span>
+												  <label class="form-check-label ps-1" for="flexCheckDefault4">
+												    Pending
+												  </label>
+												</div>
+												<div class="form-check text-end pt-2 pb-3">
+													<button class="btn btn-apply">Apply</button>
+												</div>
+											  </ul>
+											</div>
+		   	       	 			    	</div>
+		   	       	 			    </th>
+		   	       	 			    <th>Replies</th>
+		   	       	 			</tr>
+		   	       	 	    </thead>
+		   	       	 	    <tbody>
+		   	       	 	    	<tr>
+		   	       	 	    		<td>21 Sep 2021</td>
+		   	       	 	    		<td>Ruwal Shah</td>
+		   	       	 	    		<td>
+		   	       	 	    		  <span>Review Logged hours for 09/21/2021 Total 0 hrs</span>
+		   	       	 	    		 </td>
+		   	       	 	    		
+		   	       	 	    		<td>
+		   	       	 	    			<p class="status-pen mt-1"></p>Pending</td>
+		   	       	 	    		<td><img src = "comment.png" style="width:40px" class="chat_msg"><span class="badge-notify">3</span></td>
+		   	       	 	    	</tr>
+
+		   	       	 	    	<tr>
+		   	       	 	    		<td>21 Sep 2021</td>
+		   	       	 	    		<td>Ruwal Shah</td>
+		   	       	 	    		<td>
+		   	       	 	    		    <span>Review Logged hours for 09/21/2021 Total 0 hrs</span>
+		   	       	 	    	    </td>
+		   	       	 	    		
+		   	       	 	    		<td><p class="status-rej mt-1"></p>Rejected</td>
+		   	       	 	    		<td><img src = "comment.png" style="width:40px" class="chat_msg"><span class="badge-notify">1</span></td>
+		   	       	 	    	</tr>
+
+		   	       	 	    	<tr>
+		   	       	 	    		<td>21 Sep 2021</td>
+		   	       	 	    		<td>Ruwal Shah</td>
+		   	       	 	    		<td>
+		   	       	 	    			<span>Review Logged hours for 09/21/2021 Total 0 hrs</span>
+		   	       	 	    		</td>
+		   	       	 	    		
+		   	       	 	    		<td><p class="status-app mt-1"></p>Approved</td>
+		   	       	 	    		<td><img src = "comment.png" style="width:40px" class="chat_msg"><span class="badge-notify">3</span></td>
+		   	       	 	    	</tr>
+
+		   	       	 	    	<tr>
+		   	       	 	    		<td>21 Sep 2021</td>
+		   	       	 	    		<td>Ruwal Shah</td>
+		   	       	 	    		<td>
+		   	       	 	    			<span>Review Logged hours for 09/21/2021 Total 0 hrs</span>
+		   	       	 	    		</td>
+		   	       	 	    		
+		   	       	 	    		<td><p class="status-app mt-1"></p>Approved</td>
+		   	       	 	    		<td><img src = "comment.png" style="width:40px" class="chat_msg"><span class="badge-notify">3</span></td>
+		   	       	 	    	</tr>
+		   	       	 	    </tbody>
+		   	       	 	</table>
+		   	       	</div>
+	   	    	</div>
+	   	    </div>
+	   	       	    <!-- Modal -->
+   	    <div class="modal">
+   	    	<div class="modal-content">
+   	    		<div class="modal-header  border-0">
+                     <h2 class="modal-heading text-white mb-0 ps-4">Replies</h2>
+                    <span  class="close">&times;</span>
+   	    		</div>
+   	    		<div class="modal-body border-0">
+   	    			<div class="w3-container">
+			               <div class = "w3-container-inner">
+			                 <div class = "admin">
+			                   <div class = "row admin-label">
+			                     <h5>
+			                       Admin
+			                       <span class = "date-time">28-06-2021 10:09am</span>
+			                      </h5>
+			                    </div>
+
+			                    <div class = "admin-msg">
+			                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			                    </div>
+			                  </div>
+
+			                  <div class = "user">
+			                     <div class = "row user-label">
+			                       <h5>
+			                          User
+			                          <span class = "date-time">28-06-2021 10:09am</span>
+			                        </h5>
+			                      </div>
+
+			                      <div class = "user-msg">
+			                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+			                      </div>
+			                  </div>
+
+			                   <div class = "admin">
+			                   <div class = "row admin-label">
+			                     <h5>
+			                       Admin
+			                       <span class = "date-time">28-06-2021 10:09am</span>
+			                      </h5>
+			                    </div>
+
+			                    <div class = "admin-msg">
+			                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			                    </div>
+			                  </div>   
+			            </div>
+			        </div>
+   	    		</div>
+   	    		<div class="modal-footer pt-0  border-0">
+   	    			<div class = "message-box w-100 d-flex align-items-center">
+                     <textarea class="form-control input-message border-info" placeholder="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore..."></textarea> 
+
+                      <div class="drift-widget-composer-actions"><button class="drift-widget-composer-send-button bg-white border-0" aria-label="send message"><svg class="drift-default-icon drift-default-icon--send" width="30" height="30" viewBox="0 0 17 16"><path fill="#33CAE1"   stroke-linecap="round" stroke-linejoin="round" d="M1 1l2.166 5.39 8.5 1.564-8.5 1.666L1 15l16-7z"></path></svg></button></div>
+                  </div>
+   	    		</div>
+   	    	</div>
+   	    </div>
+   	    <div class="row text-end mt-2">
+   	    	<div class="col-12">
+   	    		<div class="pagination_page" style="margin-bottom: 50px">
+   	    			<ul id="pagination_myTable" class="pagination-lg pull-right light-theme simple-pagination">
+   	    				<li class="disabled"><span class="current prev">Prev</span></li>
+   	    				<li class="active"><span class="current">1</span></li>
+   	    				<li class="disabled"><span class="current next">Next</span></li>
+   	    			</ul>
+   	    		</div>
+    	    </div>
+   	    	</div>
+   	    </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$( function() {
+	$( "#datepicker" ).datepicker({
+		dateFormat: "dd-mm-yy"
+		,	duration: "fast"
+	});
+} );
+
+	$( function() {
+	$( "#datepicker2" ).datepicker({
+		dateFormat: "dd-mm-yy"
+		,	duration: "fast"
+	});
+} );
+
+$(document).on("click",".chat_msg",function(e){
+	$(".modal").show();
+})
+$(document).on("click",".close",function(e){
+	$(".modal").hide();
+})
+
+$(document).on("click",".time_scheduled",function(e){
+	$(".modal-table").show();
+})
+
+$(document).on("click",".close_modal",function(e){
+   $(".modal-table").hide();	
+})
+$(".checkbox-menu").on("change", "input[type='checkbox']", function() {
+   $(this).closest("li").toggleClass("active", this.checked);
+});
+
+</script>
+</body>
+</html>

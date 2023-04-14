@@ -1,0 +1,87 @@
+body{
+	background : #ddd;
+	font-family: Muli;
+	font-size: 14px;
+}
+.text_label{
+	font-weight: bold;
+	font-family: Roboto;
+}
+.select_box_div{
+	box-shadow: 0px 2px 2px 2px grey;
+}
+.label-text{
+    font-size: 15px;
+    color: #444;
+}
+.profile_text{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.form-control,.form-select{
+	font-size: 14px;
+	background-image: none;
+	cursor: pointer;
+}
+.btn{
+	background : #337ab7;
+	color: #fff;
+	font-size: 14px;
+}
+.btn:hover{
+	color: #fff;
+}
+.inner_width{
+	width: 100%;
+}
+.make_profile{
+	text-align: left;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.swal-modal{
+	width: 350px;
+}
+.swal-footer{
+	text-align: center;
+}
+.swal-button--confirm{
+    background : #337ab7;
+}
+.swal-button:not([disabled]):hover{
+   background : #337ab7;	
+}
+.swal-button:focus{
+	box-shadow: none;
+}
+.swal-icon--warning{
+	width: 50px;
+	height: 50px;
+}
+.swal-icon--warning__body{
+	height: 20px;
+}
+.swal-icon--success__ring{
+	width: 70px;
+	height: 70px;
+	left: 0px;
+}
+.swal-icon{
+	margin: 10px auto; 
+}
+.swal-title{
+	padding-left: 0px 16px;
+}
+.swal-icon:first-child{
+	margin-top: 20px !important;
+}
+@media (min-width: 576px){
+  .inner_width{
+	width: 75%;
+  }
+  .make_profile{
+	text-align: center;
+	margin-left: 16px;
+	padding-left: 10px;
+   }	
+}

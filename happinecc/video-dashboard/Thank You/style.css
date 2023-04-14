@@ -1,0 +1,27 @@
+body{
+	font-family: Roboto;
+}
+.container_bucket{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.bg-img{
+	background-size: cover;
+	background-position: bottom;
+    z-index : -1;
+}
+.thanks-text{
+	font: normal normal normal 15px/20px Roboto;
+}
+.social_icon,.social_text{
+	color: #237FF6;
+}
+.social_icon{
+	vertical-align: middle;
+}
+.social_text{
+	font-size: 11px;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}

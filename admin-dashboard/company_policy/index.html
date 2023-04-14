@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Company Policy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+</head>
+<body>
+<div class="container mt-5 rounded bg-white py-3 mb-2">
+    <div class="row">
+  		<div class="col-12">
+  			<h3 class="company_policy_heading">Company Policy</h3>
+  		</div>
+  	</div>
+
+  	<div class="row mt-3 px-3 py-3 align-items-center">
+  		<div class="col-lg-3 col-md-5 col-sm-6">
+	  		<label class="label-text">Search Company</label>
+	  		<input type="text" name="" class="form-control pe-4">
+	  		<span class="fa fa-stack text-center">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+            </span>
+  	    </div>
+  	    <div class="col text-end mt-4">
+  	    	<button class="btn btn-default add_policy">Add Policy</button>
+  	    </div>
+  	</div>
+
+    <!-- Table Section -->
+	<div class = "ResultsTable__wrapper mt-4 px-3">
+	    <table class="ResultsTable ResultsTable--sortable">
+			<thead>
+			    <tr>
+			        <th>Company policy</th>
+			    </tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<div class="outer-container px-3 py-2 text-white w-100">
+							<div class="company_name_div">
+								<span class="company_name">Linen Mart</span>
+								<span class="float-end">2021-09-16 05:41AM</span>
+							</div>
+							<div class = "policy_text_div py-4 px-4">
+								<span class="policy_text">If anyone else is confused about Affirm, they simply hit Proceed to Checkout in their cart and the Affirm option is at the bottom after they fill out all their info.</span>
+							</div>
+							<div class = "actions-btn gap-2 text-end">
+								<button class="btn btn-info text-white" id = "edit">Edit</button>
+								<button class="btn btn-info text-white" id = "agent">Agent</button>
+								<button class="btn btn-info text-white" id = "delete">Delete</button>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="outer-container px-3 py-2 text-white w-100">
+							<div class="company_name_div">
+								<span class="company_name">Linen Mart</span>
+								<span class="float-end">2021-09-16 05:41AM</span>
+							</div>
+							<div class = "policy_text_div py-4 px-4">
+								<span class="policy_text">If anyone else is confused about Affirm, they simply hit Proceed to Checkout in their cart and the Affirm option is at the bottom after they fill out all their info.</span>
+							</div>
+							<div class = "actions-btn d-flex gap-2 justify-content-end">
+								<div class="attach_icon_div"><i class="fas fa-paperclip py-1 attach_icon"></i></div>
+								<button class="btn btn-info text-white" id = "edit">Edit</button>
+								<button class="btn btn-info text-white" id = "agent">Agent</button>
+								<button class="btn btn-info text-white" id = "delete">Delete</button>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+	    </table>
+	</div>
+    
+    <!-- Pagination button -->
+	<div class="row px-3 py-3">
+		<div class="col-12 gap-2 justify-content-end d-flex">
+			    <a class="page_link prev current" href="#">Previous</a>
+			    <a class="page_link current" href="#">1</a>
+			    <a class="page_link" href="#">2</a>
+			    <a class="page_link" href="#">3</a>
+			    <a class="page_link next" href="#">Next</a>
+		</div>
+	</div>
+
+	<!--Modal -->
+	<div class="modal" id="myModal">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).on("click",".add_policy",function(e){
+		var modal_header = '<div class = "modal-header"></div>';
+		$(".modal-content").append(modal_header);
+
+		var policy_header = '<h4 class="policy py-3">Save Policy</h4>';
+		var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+		$(".modal-header").append(policy_header,close_btn);
+
+
+		var modal_body = '<div class = "modal-body"></div>';
+		$(".modal-content").append(modal_body);
+
+		var company_text = '<span class="fw-normal" id = "company_text">Company Name : Linen Mart</span>';
+		var policy_div = '<div class="form-group policy-name-div mt-2">';
+		var policy_name = '<label class = "policy_label">Policy Name</label>';
+		var policy_input_field = '<input type="text" name="" class="form-control">';
+        
+        var policy_text_div = '<div class="form-group policy-text-div mt-1">';
+		var policy_text_label = '<label class = "policy_label">Policy Text</label>';
+		var policy_text_field = '<textarea  class="form-control"></textarea>';
+
+		var upload_div = '<div class="form-group upload-div mt-1">';
+		var upload_label = '<label class = "policy_label">upload policy image(optional)</label>';
+		var upload_field = '<input type="file" name="" class="form-control">';
+        $(".modal-body").append(company_text,policy_div,policy_text_div,upload_div);
+        $(".policy-name-div").append(policy_name,policy_input_field);
+        $(".policy-text-div").append(policy_text_label,policy_text_field);
+        $(".upload-div").append(upload_label,upload_field);
+
+
+        var modal_footer = '<div class="modal-footer">';
+        $(".modal-content").append(modal_footer);
+        var save_btn = '<button class="btn btn_actions btn-default">save</button>';
+        var saveadd_btn = '<button class="btn btn_actions btn-default">save&add</button>';
+        var clear_btn = '<button class="btn btn_actions btn-default">clear</button>';
+        $(".modal-footer").append(save_btn,saveadd_btn,clear_btn);
+		$(".modal").show();
+	})
+
+	$(document).on("click",".close",function(e){
+	     $(".modal").hide();
+	     $(".modal-header").remove();
+	     $(".modal-body").remove();
+	     $(".modal-footer").remove();			
+	})
+
+	$(document).on("click","#edit",function(e){
+		var modal_header = '<div class = "modal-header"></div>';
+		$(".modal-content").append(modal_header);
+
+		var policy_header = '<h4 class="policy py-3">Save Policy</h4>';
+		var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+		$(".modal-header").append(policy_header,close_btn);
+
+
+		var modal_body = '<div class = "modal-body"></div>';
+		$(".modal-content").append(modal_body);
+
+		var company_text = '<span class="fw-normal" id = "company_text">Company Name : Linen Mart</span>';
+		var policy_div = '<div class="form-group policy-name-div mt-2">';
+		var policy_name = '<label class = "policy_label">Policy Name</label>';
+		var policy_input_field = '<input type="text" name="" class="form-control">';
+        
+        var policy_text_div = '<div class="form-group policy-text-div mt-1">';
+		var policy_text_label = '<label class = "policy_label">Policy Text</label>';
+		var policy_text_field = '<textarea  class="form-control"></textarea>';
+
+		var upload_div = '<div class="form-group upload-div mt-1">';
+		var upload_label = '<label class = "policy_label">upload policy image(optional)</label>';
+		var upload_field = '<input type="file" name="" class="form-control">';
+        $(".modal-body").append(company_text,policy_div,policy_text_div,upload_div);
+        $(".policy-name-div").append(policy_name,policy_input_field);
+        $(".policy-text-div").append(policy_text_label,policy_text_field);
+        $(".upload-div").append(upload_label,upload_field);
+
+         var modal_footer = '<div class="modal-footer">';
+        $(".modal-content").append(modal_footer);
+        var update_btn = '<button class="btn btn_actions btn-default" id = "update">update</button>';
+        $(".modal-footer").append(update_btn);
+		$(".modal").show();
+	})
+
+	$(document).on("click","#agent",function(e){
+		var modal_header = '<div class = "modal-header"></div>';
+		$(".modal-content").append(modal_header);
+
+		var policy_header = '<h4 class="policy py-3">Agent Read/Unread</h4>';
+		var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+		$(".modal-header").append(policy_header,close_btn);
+
+		var modal_body = '<div class = "modal-body"></div>';
+		$(".modal-content").append(modal_body);
+
+		var readall_btn = '<div class= "text-end"><button class = "btn btn_actions btn-default">Read All</button></div>';
+
+		var table = '<table class = "ResultsTable ResultsTable--sortable mt-2" id = "myTable"></table>';
+		$(".modal-body").append(readall_btn,table);
+
+		var table_heading = '<thead class = "t_head"></thead>';
+		var table_row = '<tr class = "table_heading"></tr>';
+		var table_heading1 = '<th>Agent Name</th>';
+		var table_heading2 = '<th>Id</th>';
+		var table_heading3 = '<th>Status</th>';
+        $("#myTable").append(table_heading);
+        $(".t_head").append(table_row);
+        $(".table_heading").append(table_heading1,table_heading2,table_heading3);
+
+        var table_body = '<tbody class = "t_body"></tbody>';
+        $("#myTable").append(table_body);
+
+        var table_body_row = '<tr class = "tbody_row"></tr>';
+        var name = '<td>Ruwal Shah</td>';
+        var id = '<td>111</td>';
+        var status = '<td><div class="text-center"><label class="switch"><input type="checkbox" id="togBtn" class="form-control"/><div class="slider round"></div></label></div></td>';                       	   							    
+        $('.t_body').append(table_body_row);
+        $('.tbody_row:last-child').append(name,id,status);
+		$(".modal").show();
+	})
+
+	$(document).on("click","#delete",function(e){
+		$(".modal").show();
+	    var modal_header = '<div class = "modal-header"></div>';
+		$(".modal-content").append(modal_header);
+
+		var policy_header = '<h4 class="policy py-3">Delete Policy</h4>';
+		var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+		$(".modal-header").append(policy_header,close_btn);
+
+		var modal_body = '<div class = "modal-body"></div>';
+		$(".modal-content").append(modal_body);
+
+		var question_text = '<span id = "company_text">Are you sure you want to delete?</span>';
+		$(".modal-body").append(question_text);
+
+		var modal_footer = '<div class="modal-footer">';
+        $(".modal-content").append(modal_footer);
+        var cancel_btn = '<button class="btn btn_actions btn-default" id = "update">cancel</button>';
+        var confirm_btn = '<button class="btn btn_actions btn-default" id = "update">confirm</button>';
+        $(".modal-footer").append(cancel_btn,confirm_btn);
+	})
+
+</script>
+</body>
+</html>

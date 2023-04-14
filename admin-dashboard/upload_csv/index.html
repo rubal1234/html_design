@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Csv</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+	<div class="container mt-5 rounded py-3 mb-2">
+		<div class="row">
+    		<div class="col-md-12 bg-white  pt-4 pb-3 rounded mx-auto col-lg-8 select_box_div">
+    			<div class="form-group">
+    				<label class="label-text fw-bold mb-1">Choose Csv Options</label>
+    				<select class="form-select" id = "csv_options">
+    					<option>Select</option>
+    					<option selected>Make Profile</option>
+    					<option>Hr Schedule Call</option>
+    					<option>HJH Templates</option>
+    					<option>calculate Salary</option>
+    				</select>
+    			</div>
+
+    			<div class="w-100 border-bottom border-2 mt-4">
+    				
+    			</div>
+
+    			<div class="headig_div mt-4">
+    				<div class="w-75  mx-auto">
+    				   <p class="profile_text py-1 mb-auto">Upload file and make profile</p>
+                    </div>
+    			</div> 
+
+    			<div class="form-group upload_file_div mt-5">
+    				<div class="inner_width mx-auto">
+    				    <label class="text_label inner_width mb-2">Choose File</label>
+    				</div>
+    				<input type="file" name="" class="form-control mx-auto inner_width">
+    				<div class="submit_btn inner_width mx-auto mt-3">
+    				  <button class="btn btn-default">Submit</button><br>
+    				</div>	
+    			</div>
+	    			<div class=" mx-auto action_btn d-flex  mt-3">
+	    				    <div class="col-4 make_profile">
+		    					<button class="btn btn-default">make_profile</button>
+		    				</div>
+		    				 <div class="col text-end">
+		    					<button class="btn btn-default float-end ms-2">Download Sample Csv</button>
+		    					<button class="btn btn-default float-end">Description</button>
+		    				</div>
+	    				  
+	    			</div>
+    		    </div>
+    		</div>
+    	</div>
+	</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).on("change","#csv_options",function(e){
+		swal("Error!", "No file selected!", "warning");
+		var index = $("#csv_options")[0].selectedIndex;
+		if(index === 2){
+			$(".profile_text").text("SCHEDULE AGENT CALL AND MAKE PROFILE");
+			$('.company_div').remove();
+		}else if(index === 3){
+			$('.company_div').remove();
+			$(".profile_text").text("HJH TEMPLATES");
+			var company_div = '<div class="form-group company_div inner_width mx-auto mb-3">';
+			var label = '<label class = "text_label mb-2">Select Company</label>';
+            var select_box = '<select class = "form-select company_options"><option>Select</option><option>busibud</option><option>helplama</option></select>';
+            $(".upload_file_div").prepend(company_div);
+            $(".company_div").append(label,select_box);
+
+		}else if(index === 4){
+			$(".profile_text").text("Calculate Salary");
+			$('.company_div').remove();
+		}
+	})
+
+	$(document).on("click",".company_options",function(e){
+		swal("Success!", "Template copied!", "success");
+	})
+</script>
+</body>
+</html>

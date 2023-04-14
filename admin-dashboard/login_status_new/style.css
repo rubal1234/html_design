@@ -1,0 +1,299 @@
+body{
+	background: #ddd;
+	font-family: Roboto;
+}
+.heading{
+	font-family: "Muli",sans-serif !important;
+}
+.Search__input{
+	height: 35px;
+    font-size: 14px;
+    padding: 0 18px;
+    border : 1px solid #ddd;
+    font-family: inherit;
+    transition: all 0.3s;
+}
+.Search__input:focus-visible{
+	outline : none;
+}
+#select-form{
+	font-size: 15px;
+	color: #707070;
+	background-image: none !important;
+}
+#entry_select{
+    font-size: 15px;
+	color: #707070;
+	background-image: none !important;
+}
+
+
+/** datepicker styles */
+#ui-datepicker-div {
+	display: none;
+	background-color: #fff;
+	box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+	margin-top: 0.25rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+.ui-datepicker-calendar thead th {
+	padding: 0.25rem 0;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #78909C;
+}
+.ui-datepicker-calendar tbody td {
+	width: 2.5rem;
+	text-align: center;
+	padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+	display: block;
+	border-radius: 0.25rem;
+	line-height: 2rem;
+	transition: 0.3s all;
+	color: #546E7A;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {	
+	background-color: #E0F2F1;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+	background-color: #009688;
+	color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
+	border-radius: 0.25rem;
+	transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+	background-color: #ECEFF1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {	
+	left: 0;	
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-size: 0.5rem;
+	background-position: 50%;
+	transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+	right: 0;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: 50%;
+}
+.ui-datepicker-header a>span {
+	display: none;
+}
+.ui-datepicker-title {
+	text-align: center;
+	line-height: 2rem;
+	margin-bottom: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+	color: #78909C;
+	font-weight: 400;
+	font-size: 0.75rem;
+}
+.entry_label{
+	color: #707070;
+}
+.ResultsTable__wrapper{
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    position: relative;
+}
+.ResultsTable {
+    min-width: calc(100% - 2px);
+    border-collapse: collapse;
+}
+.ResultsTable--sortable {
+    table-layout: fixed;
+}
+
+.ResultsTable thead th {
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 14px;
+    text-transform: none;
+    color: #000;
+}
+
+.ResultsTable td, .ResultsTable th {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.ResultsTable th {
+    text-align: left;
+    white-space: nowrap;
+    padding: 9px 18px;
+}
+.ResultsTable--sortable th:first-child, .ResultsTable--sortable th:nth-child(2) {
+    min-width: initial;
+}
+.ResultsTable tbody tr:hover{
+	background-color : #f4f7f6;
+}
+.ResultsTable td{
+	padding: 10px;
+	font-size: 14px;
+}
+.ResultsTable--sortable th:before{
+	content: "\2191";
+	float: right;
+	opacity: 0.3;
+	cursor: pointer;
+}
+.ResultsTable--sortable th:after{
+	content: "\2193";
+	float: right;
+	opacity: 0.3;
+	cursor: pointer;
+}
+.prev_btn,.next_btn{
+	border : 1px solid #ccc;
+	color: #707070;
+	font-size: 15px;
+}
+.badge-danger{
+	border : 1px solid #dc3545;
+	color: #dc3545;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+}
+.badge-time{
+	font-size: 14px;
+	cursor: pointer;
+}
+.login-time,.logout-time{
+	font-size: 14px;
+	color: #707070;
+	border : 1px solid #707070;
+}
+.conflict_status{
+	font-size: 14px;
+	color: #22AF46;
+	border : 1px solid #22AF46;
+	text-transform: uppercase;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+.close {
+  color: #aaaaaa;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+/**Slider Css */
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 85px;
+}
+
+.switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #dc3545;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color:#22AF46 ;
+}
+
+input:checked + .slider:before {
+  transform: translateX(50px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.prev{
+  border-radius: 5px 0px 0px 5px !important;
+}
+.next{
+    border-radius: 1px 5px 5px 1px !important;
+}
+.links{
+	border-radius: 2px !important;
+}

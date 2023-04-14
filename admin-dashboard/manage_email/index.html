@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manage Email</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+  <script type="text/javascript" href = "script.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+  <div class="container mt-5 rounded bg-white py-3">
+  <!-- Add Email Button -->
+    <div class="row">
+  		<div class="col-12">
+  			<button class="btn btn-primary email">Add Email</button>
+  		</div>
+    </div>
+     <!-- Search Div -->
+    <div class="row">
+      <div class="col-6"></div>
+      <div class="col-6 mt-2 justify-content-end">
+        <input type="text" name="" class="form-control" placeholder="Filter result">
+      </div>
+    </div>
+
+    <div class = "ResultsTable__wrapper mt-2">
+      <table class="ResultsTable ResultsTable--sortable">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Configure</th>
+            <th>Answers</th>
+            <th>Invoice</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  <!-- Modal content -->
+    <div class="modal-content d-block">
+    </div>
+  </div>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end my-3">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#" contentEditable="true" type = "number">...</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+
+
+   $(document).ready(function(e){
+    for(var i=0;i<5;i++){
+    var td1 = '<td><span>rojanshah9@gmail.com</span><span class="badge badge-info float-end fw-normal px-3 mx-2">Seen</span><span class="badge badge-success float-end fw-normal px-2">Last Updated at 2021-09-08 14:06:37</span></td>'
+     var td2 = '<td><button class="btn btn-primary config">Config</button></td>';
+     var td3 = '<td><button class="btn btn-success answers">Answers</button></td>';
+     var td4 = '<td><button class = "btn btn-info text-white add_url">Add Url</button></td>';
+     var td5 = '<td><button class="btn btn-danger delete">Delete</button></td>';
+     var tr = "<tr></tr>"
+     $(".ResultsTable tbody").append(tr);
+     $("tbody tr:last-child").append(td1,td2,td3,td4,td5);  
+   }
+   })
+
+  $(document).on("click",".email",function(e){
+
+    var modal_header = '<div class = "modal-header"></div>';
+    $(".modal-content").append(modal_header);
+
+    var modal_body = '<div class = "modal-body"></div>';
+    $(".modal-content").append(modal_body);
+
+    var modal_footer = '<div class = "modal-footer"></div>';
+    $(".modal-content").append(modal_footer);
+
+    var title = "<span>Details</span>";
+    var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+
+    var email_field = '<input type="text" name="" class="form-control mt-3" placeholder="Email Address">';
+    var name_field = '<input type="text" name="" class="form-control mt-3" placeholder="Email Name">';
+
+    var save_btn = '<button class="btn btn-success save">Save</button>';
+    $(".modal-header").append(title,close_btn);
+    $(".modal-body").append(email_field,name_field);
+    $(".modal-footer").append(save_btn);
+    $(".modal").show();
+  })
+
+  $(document).on("click",".config",function(e){
+    var modal_header = '<div class = "modal-header"></div>';
+    $(".modal-content").append(modal_header);
+
+    var title = "<span>Questions</span>";
+    var sub_title = '<span class = "float-end">Order</span>';
+    var check_slider = '<div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked></div>';
+    var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+    $(".modal-header").append(title,sub_title,check_slider,close_btn);
+    
+    var modal_body = '<div class = "modal-body"></div>';
+    $(".modal-content").append(modal_body);
+    
+    for (var i=0;i<3;i++){
+    var modal_inner = '<div class = "inner-modal d-flex align-items-center"></div>'
+    var textarea = '<textarea class = "form-control w-75 mt-2" placeholder = "Enter here..."></textarea>'
+    var add_btn = '<button class = "btn btn-primary mx-2 h-25">Add</button>';
+    var delete_btn = '<button class = "btn btn-danger h-25"><i class="far fa-trash-alt"></i></button>';
+    $(".modal-body").append(modal_inner);
+    $(".inner-modal:last-child").append(textarea,add_btn,delete_btn);
+    }
+
+    var modal_footer = '<div class = "modal-footer"></div>';
+    $(".modal-content").append(modal_footer);
+
+    var save_btn = '<button class="btn btn-success save">Save</button>';
+
+    $('.modal-footer').append(save_btn);
+
+    $(".modal").show();
+  })
+
+  $(document).on("click",".answers",function(e){
+
+    var modal_header = '<div class = "modal-header"></div>';
+    $(".modal-content").append(modal_header);
+
+    var title = "<span>Answers</span>";
+    var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+    $(".modal-header").append(title,close_btn);
+
+    var modal_body = '<div class = "modal-body"></div>';
+    $(".modal-content").append(modal_body);
+    
+
+    var ques_text = ["Would it be possible for you to give us a better estimate of the expected volume on the channel that you need help with? (Phone Support)","Would you be interested in seeing our quote for the business hours coverage as well or are you only interested in the 24x7 coverage?","Do you need help with any other channels like Live Chat, Email & Social Media?"];
+
+    var ans_text = ["I need phone support for the occasional person who feels a need to call. The volume could be anywhere from 0 calls to maybe a handful (5-6) each month. It could be higher but it's difficult to estimate. Can base your pricing estimate on 8 calls per month? Thanks.","24x7 coverage","No"];
+
+    for (var i =0;i<ques_text.length;i++){
+      var all_info = '<div class = "all_info mt-4"></div>'
+       var question_label = '<span class = "fw-bold my-3">Question: '+(i+1)+'</span>';
+       var question_text = '<textarea type = "text" class = "form-control"  readonly>'+ques_text[i]+'</textarea>';
+       var answer_text = '<textarea type = "text" class = "form-control mt-1"  readonly>'+ans_text[i]+'</textarea>';
+      $(".modal-body").append(all_info);
+      $(".modal-body").append(question_label,question_text,answer_text);
+    }
+  
+    $(".modal").show();
+  })
+
+  $(document).on("click",".add_url",function(e){
+    var modal_header = '<div class = "modal-header"></div>';
+    $(".modal-content").append(modal_header);
+
+    var title = "<span>Add Document</span>";
+    var close_btn = '<i class="fas fa-times float-end close fw-bold"></i>';
+    
+    $(".modal-header").append(title,close_btn);
+
+    var modal_body = '<div class = "modal-body"></div>';
+    $(".modal-content").append(modal_body);
+    var label_text = '<span class = "fw-bold">Enter document url</span>';
+    $(".modal-body").append(label_text)
+    var inner_modal = '<div class = "inner-modal"></div>';
+    var input_div = '<div class = "input_div align-items-center"></div>';
+    var input_text = '<div class="d-flex"><input type = "text" class = "form-control w-75" placeholder = "Enter url here..."><button class = "btn btn-primary mx-5">Save</button></div>';
+    var input_text2 = '<div class="d-flex mt-2"><input type = "text" class = "form-control w-75" value = "https://google.com" readonly><button class = "btn btn-success mx-5">Copy</button></div>';
+    $(".modal-body").append(inner_modal);
+    $(".inner-modal").append(input_div);
+    $(".input_div").append(input_text,input_text2);
+    $(".modal").show();
+  })
+
+  $(document).on("click",".delete",function(e){
+  swal("Are you sure you want to do this?", {
+     buttons: ["Cancel", "Delete"],
+    });
+  })
+
+  $(document).on("click",".close",function(e){
+    $(".modal").hide();
+    $(".modal-header").remove();
+    $(".modal-body").remove();
+    $(".modal-footer").remove();
+  })
+  
+  $(document).on("click",".save",function(e){
+    $(".modal").hide();
+    $(".modal-header").remove();
+    $(".modal-body").remove();
+    $(".modal-footer").remove();
+  })
+  </script>
+</body>
+</html>

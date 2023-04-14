@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
+    <link rel="stylesheet" href="repo6.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container mt-5 mb-2 rounded bg-white py-3">
+    <!-- Top heading div -->
+    <div class="row">
+      <div class="col-12">
+        <h3 class="heading" id="sd-main">Select Details</h3>
+      </div>
+    </div>
+
+    <div class="row mt-3 px-3 py-3">
+      <div class="col-12 col-sm-6">
+        <h2 class="inner-heading">Select Details</h2>
+      </div>
+      <div class="col-12 col-sm-6 text-end">
+        <i class="fas fa-sync-alt mx-2 icons"></i>
+        <i class="fas fa-expand-arrows-alt mx-2 icons"></i>
+        <i class="fas fa-ellipsis-h mx-2 icons"></i>
+      </div>
+    </div>
+
+    <div class="row px-3 py-4 ">
+      <div class="col-md-10">
+        <p id="drop-down-tagname">Select Freelancer:</p>
+      </div>
+
+      <div class="col-sm-3">
+        <select class="form-select">
+          <option value="1">Agent 1</option>
+          <option value="2">Agent 2</option>
+          <option value="3">Agent 3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row px-3">
+      <div class="col-12">
+        <p class="mb-auto">Show Dialer</p>
+      </div>
+    </div>
+
+    <div class="row px-4 mt-3">
+      <label class="switch">
+        <input type="checkbox" id="togBtn">
+        <div class="slider round">
+         <span class="on">Yes</span>
+         <span class="off">no</span>
+        </div>
+       </label>
+    </div>
+
+    <div class="row px-3">
+      <div class="col-sm-12 mx-auto">
+        <div class = "ResultsTable__wrapper mt-4">
+        <table class="ResultsTable ResultsTable--sortable">
+            <thead>
+              <tr>
+                  <th>Employee ID</th>
+                  <th>Company ID</th>
+                  <th>Slot Start</th>
+                  <th>Slot End</th>
+                  <th>Days</th>
+                  <th>Action</th>
+                  <th>Fre</th>
+                  <th>Exec</th>
+                  <th>Test Call</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                  <td style="width: 15%;">688</td>
+                  <td  style="width:20%;">
+                    <div class="input-group dropdown dropdown-sc">
+                      <select class="form-select">
+                        <option selected value="1">Select Company</option>
+                        <option value="2">Yashi</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2"><i class="far fa-clock"></i></span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2"><i class="far fa-clock"></i></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Mon
+                          </label>
+                    </div>
+
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                          <label class="form-check-label" for="flexCheckDefault1">
+                            Tue
+                          </label>
+                    </div>
+
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                          <label class="form-check-label" for="flexCheckDefault2">
+                            Wed
+                          </label>
+                    </div>
+
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                          <label class="form-check-label" for="flexCheckDefault3">
+                            Thurs
+                          </label>
+                    </div>
+
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                          <label class="form-check-label" for="flexCheckDefault4">
+                            Fri
+                          </label>
+                    </div>
+
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                          <label class="form-check-label" for="flexCheckDefault5">
+                            Sat
+                          </label>
+                    </div>
+
+                    <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                          <label class="form-check-label" for="flexCheckDefault6">
+                            Sun
+                          </label>
+                    </div>
+                  </td>
+
+                  <td>
+                    <button class="btn btn-danger">Delete</button>
+                  </td>
+
+                  <td>
+                    <button class="btn btn-info text-white" style="width: 90px;" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-user-friends mx-1"></i>Fre</button>
+                  </td>
+
+                  <td>
+                    <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="fas fa-user mx-1"></i>Exec</button>
+                  </td>
+                  <td>Null</td>
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>
+              <button class="btn btn-info text-white">Add New Slot</button>
+            </td>
+          </tr>
+        </tfoot>
+        </table>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+    
+
+
+ <!--  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3 id="sd-main">Select Details1</h3>
+      </div>
+    </div>
+  </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3 subheading-col">
+            <h4 id="sd-sub">Select Details</h4>
+          </div>
+          <div class="col-3"></div>
+          <div class="col-6 selectdetails-icons-col">
+            <svg class="selectdetails-icons" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+              <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+              <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+            </svg>
+            <svg class="selectdetails-icons" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z"/>
+            </svg>
+            <svg class="selectdetails-icons" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-11">
+            <p id="drop-down-tagname">Select Freelancer:</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-11">
+            <div class="input-group mb-3 dropdown dropdown-fl">
+              <select class="form-select" id="inputGroupSelect01">
+                <option value="1">Agent 1</option>
+                <option value="2">Agent 2</option>
+                <option value="3">Agent 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col">
+            <p id="dropdown-aftertext">Show Dialer</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-11">
+            <table class="table table-bordered table-responsive addslot-table">
+              <thead>
+                <tr>
+                  <th scope="col">Employee ID</th>
+                  <th scope="col">Company ID</th>
+                  <th scope="col">Slot Start</th>
+                  <th scope="col">Slot End</th>
+                  <th scope="col">Days</th>
+                  <th scope="col">Action</th>
+                  <th scope="col">Fre</th>
+                  <th scope="col">Exec</th>
+                  <th scope="col">Test Call</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><button type="button" class="btn btn-info">Add New Slot</button></td>
+                </tr>
+                <tr>
+                  <td>688</td>
+                  <td>
+                    <div class="input-group mb-3 dropdown dropdown-sc">
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected value="1">Select Company</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <input type="time" class="timer">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <input type="time" class="timer">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Mon
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Tue
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Wed
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Thurs
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Fri
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Sat
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Sun
+                      </label>
+                    </div>
+                  </td>
+                  <td><button type="button" class="btn btn-danger">Delete</button></td>
+                  <td><button type="button" class="btn btn-info fre-btn" onclick="alertme()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                  </svg> Fre</button></td>
+                  <td><button type="button" class="btn btn-primary exec-btn" onclick="alertme()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg> Exec</button></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div> -->
+
+<!-- Modal-fre -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-muted" id="exampleModalLabel">Helplama Contact Freelancer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table modal-table1">
+          <thead>
+            <tr>
+              <th scope="col">COMPANY</th>
+              <th scope="col">FREELANCER</th>
+              <th scope="col">PHONE NUMBER</th>
+              <th scope="col">PRIORITY</th>
+              <th scope="col">DELETE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td style="padding-right: 100px;">
+                  <div class="input-group dropdown py-3">
+                    <select class="form-select">
+                      <option selected value="1">Yashi</option>
+                    </select>
+                  </div>
+              
+              </td>
+              <td>null</td>
+              <td>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+              </td>
+              <td>1</td>
+              <td><button class="btn btn-danger">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger me-auto" data-bs-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn btn-success">Add New</button>
+        <button type="button" class="btn btn-light">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal-exec-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-muted" id="exampleModalLabel">Helplama Contact Executive</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table modal-table2">
+          <thead>
+            <tr>
+              <th scope="col">COMPANY PHONE NUMBER</th>
+              <th scope="col">COMPANY AGENT NUMBER</th>
+              <th scope="col">COMPANY ROUTE NUMBER</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+              
+              </td>
+              <td>
+                <input type="text" class="form-control" aria-describedby="basic-addon1">
+              </td>
+              <td>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table modal-table2">
+          <thead>
+            <tr>
+              <th scope="col">COMPANY</th>
+              <th scope="col">EXECUTIVE NAME</th>
+              <th scope="col">EXECUTIVE NUMBER</th>
+              <th scope="col">DELETE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td style="padding-right: 100px;">
+                  <div class="input-group dropdown py-3">
+                    <select class="form-select">
+                      <option selected value="1">Yashi</option>
+                    </select>
+                  </div>
+              
+              </td>
+              <td>
+                <input type="text" class="form-control" aria-describedby="basic-addon1">
+              </td>
+              <td>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+              </td>
+              <td><button class="btn btn-danger">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger me-auto" data-bs-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn btn-success">Add New</button>
+        <button type="button" class="btn btn-light">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="repo6.js"></script>
+</body>
+</html>

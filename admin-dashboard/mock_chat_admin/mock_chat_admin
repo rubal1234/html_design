@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
+    <link rel="stylesheet" href="repo6.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container mt-5 mb-2">
+    <div class="row">
+      <div class="col-6">
+        <p class="display-3" style="color: blue;">Company and their tests</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5 mb-2 rounded bg-white py-3">
+    <div class="row">
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Test</button>
+      </div>
+    </div>
+
+    <div class="row mt-3 py-3">
+      <div class="col-12 col-sm-6">
+        <button type="button" class="btn btn-primary">Download CSV</button>
+      </div>
+    </div>
+
+    <div class="row mt-3 px-3 py-3">
+      <div class="col-12 col-sm-6"></div>
+      <div class="col-12 col-sm-6 text-end">
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Filter results">
+        <datalist id="datalistOptions">
+          <option value="San Francisco">
+          <option value="New York">
+          <option value="Seattle">
+          <option value="Los Angeles">
+          <option value="Chicago">
+        </datalist>
+      </div>
+    </div>
+
+
+    <div class="row px-3">
+      <div class="col-sm-12 mx-auto">
+        <div class = "ResultsTable__wrapper mt-4">
+        <table class="ResultsTable ResultsTable--sortable">
+            <thead>
+              <tr>
+                  <th>Company Name</th>
+                  <th>Test Name</th>
+                  <th>Test Assignee</th>
+                  <th>Test Config</th>
+                  <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                  <td style="width: 15%;">4940</td>
+                  <td  style="width:20%;">
+                    <input class="form-control" type="text" value="test" aria-label="Disabled input example" disabled readonly>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary" onclick="location.href = 'test_asignee.html';">Test Assignees</button>
+                  </td>
+                  <td>
+                    <button class="btn btn-primary" onclick="location.href = 'mock_test.html';">Test Config</button>
+                  </td>
+
+                  <td>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Edit Mock Time</button>
+                  </td>
+            </tr>
+            
+        </tbody>
+        </table>
+        </div>
+      </div>
+    </div>  
+
+    <div class="row mt-3 px-3 py-3 text-end">
+      <div class="col-12 col-sm-12">
+        <button type="button" class="btn btn-secondary">Prev</button>
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal add test-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-muted" id="exampleModalLabel">Add New Test</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Enter Test Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+          </div>
+          <div class="col-6" style="margin-top: 31px;">
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Filter results">
+            <datalist id="datalistOptions">
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-sm-12 mx-auto">
+            <div class = "ResultsTable__wrapper mt-4">
+            <table class="ResultsTable ResultsTable--sortable">
+                <thead>
+                  <tr>
+                      <th>Company Name</th>
+                      <th>Add Test</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                      <td>Yashi Inc</td>
+                      <td>
+                        <button class="btn btn-primary">Save test</button>
+                      </td>
+                </tr>
+                <tr>
+                  <td>busibud</td>
+                  <td>
+                    <button class="btn btn-primary">Save test</button>
+                  </td>
+            </tr>
+                
+            </tbody>
+            </table>
+            </div>
+          </div>
+        </div>  
+    
+        <div class="row mt-3 px-3 py-3 text-end">
+          <div class="col-12 col-sm-12">
+            <button type="button" class="btn btn-secondary">Prev</button>
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal mock availability-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Manage mock slots availability</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <p class="text-secondary" style="font-size: 24px;">Weekdays</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col ps-5">
+                <button type="button" class="btn btn-light">mon</button>
+              <button type="button" class="btn btn-light">tue</button>
+              <button type="button" class="btn btn-light">wed</button>
+              <button type="button" class="btn btn-light">thu</button>
+              <button type="button" class="btn btn-light">fri</button>
+              <button type="button" class="btn btn-light">sat</button>
+              <button type="button" class="btn btn-light">sun</button>
+              </div>
+            </div>
+            <div class="row px-3">
+              <div class="col-sm-12 mx-auto">
+                <div class = "ResultsTable__wrapper mt-4">
+                <table class="ResultsTable ResultsTable--sortable">
+                    <thead>
+                      <tr>
+                          <th>Time in PST</th>
+                          <th>No.Agents</th>
+                          <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                          <td><input type="time"></td>
+                          <td style="width: 25%;"><input style="width: 100%;" type="number"></td>
+                          <td>
+                            <button class="btn btn-primary">Add Mock Time</button>
+                          </td>
+                    </tr>
+                    
+                </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+            <div class="row px-3">
+              <div class="col-sm-12 mx-auto">
+                <div class = "ResultsTable__wrapper mt-4">
+                <table class="modal-ma-table">
+                    <thead>
+                      <tr>
+                          <th>Time</th>
+                          <th>No.Agents</th>
+                          <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                          <td>
+                            3:48 pm
+                          </td>
+                          <td style="width: 25%;"><input style="width: 100%;" value="1" disabled></td>
+                          <td>
+                            <button class="btn btn-danger">delete</button>
+                          </td>
+                    </tr>
+                    
+                </tbody>
+                </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save mock config</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="repo6.js"></script>
+</body>
+</html>

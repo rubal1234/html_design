@@ -1,0 +1,471 @@
+body{
+	font-size: 14px;
+	font-family: Muli;
+}
+#top-header{
+  margin: 0;
+  padding: 0 !important;
+  width: 100%;
+/*  box-shadow: 0px 3px 6px #00000029;*/
+  height : 75px;
+  transition: 0.5s;
+  margin-left: 250px;
+  position: fixed;
+  background : white;
+  z-index: 100000;
+}
+.menu_Icon{
+  background : none !important;
+  border : none !important;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.menu_Icon img{
+  width: 22px;
+}
+.menu_Icon:hover{
+  background : #F5F5F5 !important;
+  transition: 0.5s ease-in-out;
+}
+.Search__input{
+  width: 100%;
+}
+.label_text{
+  white-space: nowrap;
+}
+.sidepanel  {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #F8F8F8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  /*box-shadow: 0px 3px 6px #00000029;*/
+}
+
+.main-content{
+/*  display: none;*/
+  margin-left: 250px;
+  background : #f1f1f1;
+}
+.heading{
+  color: #020202;
+  font-size: 22px;
+  margin-top: 75px;
+}
+.pay_modal_text{
+  color: #707070;
+  letter-spacing: 1.8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-control{
+	font-size: 14px;
+}
+
+#datepicker,#datepicker2{
+	color: #707070;
+}
+/** datepicker styles */
+#ui-datepicker-div {
+	display: none;
+	background-color: #fff;
+	box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+	margin-top: 0.25rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+.ui-datepicker-calendar thead th {
+	padding: 0.25rem 0;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #78909C;
+}
+.ui-datepicker-calendar tbody td {
+	width: 2.5rem;
+	text-align: center;
+	padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+	display: block;
+	border-radius: 0.25rem;
+	line-height: 2rem;
+	transition: 0.3s all;
+	color: #546E7A;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {	
+	background-color: #E0F2F1;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+	background-color: #009688;
+	color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
+	border-radius: 0.25rem;
+	transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+	background-color: #ECEFF1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {	
+	left: 0;	
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-size: 0.5rem;
+	background-position: 50%;
+	transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+	right: 0;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: 50%;
+}
+.ui-datepicker-header a>span {
+	display: none;
+}
+.ui-datepicker-title {
+	text-align: center;
+	line-height: 2rem;
+	margin-bottom: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+	color: #78909C;
+	font-weight: 400;
+	font-size: 0.75rem;
+}
+
+.btn_clear{
+	background: #FE97B7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    opacity: 0.64;
+    cursor: pointer
+}
+
+.ResultsTable__wrapper{
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    position: relative;
+}
+
+.ResultsTable{
+    min-width: calc(100% - 2px);
+    border-collapse: collapse;
+}
+.ResultsTable--sortable{
+    table-layout: fixed;
+}
+.ResultsTable thead tr{
+	background : #00B1B1;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.ResultsTable thead th {
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 14px;
+    text-transform: none;
+    color: #000;
+    border-top: 0px;
+    color: #fff; 
+}
+
+.ResultsTable thead th:first-child{
+    border-top-left-radius: 10px;
+    border-left:0px;
+           	
+}
+
+.ResultsTable thead th:last-child{
+	border-top-right-radius: 10px;
+  border-right: 0px;
+}
+
+.ResultsTable td, .ResultsTable th {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.ResultsTable tbody tr td:nth-child(1){
+  border-left : 8px solid #58949C;
+  color: #707070;
+}
+.ResultsTable tbody tr:nth-child(2) td:nth-child(1){
+  border-left : 8px solid #FE97B7;
+}
+#D3DFE1
+.ResultsTable tbody tr:nth-child(3) td:nth-child(1){
+  border-left : 8px solid #8CBEC5;
+}
+.ResultsTable tbody tr:nth-child(4) td:nth-child(1){
+  border-left : 8px solid #D3DFE1;
+}
+
+.ResultsTable th {
+    text-align: left;
+    white-space: nowrap;
+    padding: 9px 18px;
+}
+.ResultsTable_modal th{
+    text-align: left;
+    white-space: nowrap;
+    padding: 9px 18px;
+}
+.ResultsTable--sortable th:first-child, .ResultsTable--sortable th:nth-child(2) {
+    min-width: initial;
+}
+
+.ResultsTable tbody tr:hover{
+	background-color : #f4f7f6;
+}
+
+.ResultsTable td{
+	padding: 9px 18px;
+	font-size: 14px;
+}
+
+.ResultsTable tbody td:nth-child(2),.ResultsTable tbody td:nth-child(4){
+	font-weight: bold;
+}
+.badge-notify{
+    position: absolute;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    padding: 3px 5px;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: super;
+    background-color: #58949C;
+    border-radius: 50%;
+    margin-left: -6px;
+    margin-top: -8px;
+}
+.status-app,.status-pen,.status-rej{
+  height: 6px;
+  width: 6px;
+  vertical-align: -webkit-baseline-middle;
+  margin-right : 5%;
+  background-color: #00FF00;
+  border-radius: 50%;
+  display: inline-block;
+}
+.status-pen{
+  background-color: #FFD700;
+}
+
+.status-rej{
+  background-color: #FF0000;
+}
+.exchange{
+	transform: rotate(90deg);
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100000; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  max-width: 70%;
+  border: 1px solid #888;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  margin-bottom: 20px;
+  border-radius : 30px;
+}
+.modal-heading{
+  font-size: 24px;
+}
+.modal-header{
+     background-color: #33CAE1 !important;
+     border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+}
+
+ .close{
+    right : 25px;
+    font-size:25px;
+    float:right;
+    color: #fff;
+    cursor: pointer;
+ }
+ .close:hover{
+    color: #fff !important;
+    background: none !important;
+ }
+ .w3-container-inner{
+    background: #eee;
+    border-radius : 10px;
+ }
+
+ .w3-container h5{
+    padding-left: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+ }
+ .admin-label{
+    padding-left: 20px;
+    color : #33CAE1 !important;
+ }
+ .date-time{
+    float : right;
+    font-size : 11px;
+    padding-right: 34px;
+    padding-top: 6px;
+    font-weight: normal;
+    color : #33CAE1 !important;
+ }
+ .admin-msg{
+    padding-left:20px;
+    padding-right: 5px;
+    background: #fff;
+    font-size:13px;
+    margin-top: 4px;
+    color:#686868;
+    border : 1px solid #eee;
+    padding-top: 10px;
+    border-radius: 4px;
+    font-family: Roboto;
+    border-left : 5px solid #33CAE1 !important;
+ }
+  .user-label{
+    padding-left: 20px;
+    color : #555 !important;
+
+ }
+
+ .user-msg{
+    padding-left:20px;
+    padding-right: 5px;
+    background: #fff;
+    font-size:13px;
+    margin-top: 4px;
+    color:#686868;
+    border : 1px solid #eee;
+    padding-top: 10px;
+    border-radius: 4px;
+    font-family: Roboto;
+    border-left : 5px solid #55555587 !important;
+ }
+
+ .input-message{
+   height: 50px;
+   font-family: Roboto;
+   margin-left: 15px;
+ }
+ .chat_msg{
+ 	cursor: pointer;
+ }
+ @keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.btn-apply{
+    width: 63px;
+    height: 24px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #58949C;
+    border-radius: 3px;
+    background: #58949C 0% 0% no-repeat padding-box;
+    text-align: left;
+    font: normal normal normal 15px/22px Muli;
+    letter-spacing: -0.6px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding-top: 0px;
+}
+.btn-apply:hover,.btn-apply:focus{
+  color: #fff;
+}
+.form-check{
+  cursor: pointer;
+}
+.simple-pagination li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.light-theme .current {
+    background: #C9C9C9 !important;
+    color: #fff;
+    border-color: #444;
+    box-shadow: 0 1px 0 #fff, 0 0 2px rgb(0 0 0 / 30%) inset;
+    cursor: default;
+}
+ .light-theme span {
+    color: #666;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #bbb;
+    min-width: 14px;
+    padding: 2px 7px;
+    margin: 0 5px 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px){
+  .sidepanel{
+    width: 0px;
+  }
+  .main-content{
+    margin-left: 0px;
+  }
+  #top-header{
+    margin-left: 0px; 
+  }
+
+}
+@media only screen and (max-width: 576px){
+  .modal-content{
+    max-width: 90%;
+  }
+} 
+
+

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Status New</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel = "stylesheet" href = "style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+</head>
+<body>
+
+	<div class="container mt-5 rounded bg-white py-3">
+	    <!-- Heading Text -->
+		<div class="row">
+			<div class="col-12">
+				<h1 class="heading">Slots Manage</h1>
+			</div>
+		</div>
+
+	    <!--Select date div -->
+		<div class="row py-2">
+			<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+				<label class="py-2">Select date</label>
+			   <input type="text" id="datepicker" placeholder="Select a date" class="form-control Search__input rounded ml-4" autocomplete="off">
+			</div>
+
+			<div class="col-12 col-sm-6 col-md-4 mx-md-5">
+				<label class="py-2">Select Timezone</label>
+				<select class="form-select" id = "select-form">
+				  <option selected>America/Los_Angeles</option>
+				  <option value="1">Asia/Kolkata</option>
+				</select>
+			</div>
+		</div>
+       
+		<div class="row py-2 mt-4">
+			<div class="col-sm-12 col-md-6 d-flex align-items-center">
+				<label class="mx-2 entry_label">Show</label>
+				<select class="form-select w-25" id = "entry_select">
+					<option>10</option>
+					<option>25</option>
+					<option>50</option>
+					<option>100</option>
+				</select>
+				<label class="mx-2 entry_label">entries</label>
+			</div>
+
+			<div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-end">
+				<label class="mx-2 entry_label">Search:</label>
+				<input type="text" name="" class="form-control w-50" placeholder="Search...">
+			</div>
+		</div>
+        
+        <!-- Table Section --> 
+		<div class = "ResultsTable__wrapper mt-2">
+	      <table class="ResultsTable ResultsTable--sortable">
+	        <thead>
+	          <tr>
+	            <th>Name</th>
+	            <th>Batches</th>
+	            <th>Total hours</th>
+	            <th>Notes</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+               <td>Ruwal Shah</td>
+               <td>
+               	<div class="text-start">
+               	<span class="badge badge-danger rounded-pill fw-normal px-3 mx-2" id = "batches_info">No Batches</span></td>
+               	</div>
+               <td>41 hours</td>
+               <td>
+               	<textarea class="form-control py-0"></textarea>
+               </td>
+	          </tr>
+
+	          <tr>
+               <td>Ruwal Shah</td>
+               <td>
+               	<div class="text-start">
+               	<span class="badge btn-secondary badge-time rounded-pill fw-normal px-3 mx-2" id = "batches_info">00:00:00<-->08:00:00</span></td>
+               	</div>
+               <td>41 hours</td>
+               <td>
+               	<textarea class="form-control py-0"></textarea>
+               </td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+        
+        <!--Pagination div -->
+	    <div class="row mt-3">
+	    	<div class="col-sm-6 col-md-6">
+	    		<label class="entry_label">Showing 0 to 0 of 0 entries</label>
+	    	</div>
+
+	        <div class="col-sm-6 col-md-6 text-end">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-default prev_btn" aria-current="page">Previous</a>
+                    <a href="#" class="btn btn-default next_btn">Next</a>
+                </div>
+	    	</div>
+	    </div>
+
+	    <!--Modal-->
+		<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		    <div class="modal-content d-block">
+		    	<div class="modal-header">
+		    		<h4>Modal Header</h4>
+		    		<i class="fas fa-times float-end close fw-bold"></i>
+		    	</div>
+		    	<div class="modal-body">
+		    		<div class = "ResultsTable__wrapper mt-2">
+				        <table class="ResultsTable">
+				            <thead>
+				               <tr>
+				                  <th>Agent</th>
+				                  <th>Company</th>
+				                  <th>loginTime</th>
+				                  <th>logoutTime</th>
+				                  <th>Slot type</th>
+				                  <th>Conflict Status</th>
+				                  <th>Notes</th>
+				                </tr>
+				            </thead>
+				            <tbody>
+				                <tr>
+			                        <td>Ruwal Shah</td>
+			                        <td>Busibud</td>
+			                        <td>
+			               	           <div class="text-start">
+			               	               <span class="badge login-time fw-normal px-3 mx-2" id = "batches_info">2021-09-01 13:00:00</span>
+			               	            </div>
+			               	        </td>
+			               	         <td>
+			               	           <div class="text-start">
+			               	               <span class="badge logout-time fw-normal px-3 mx-2" id = "batches_info">2021-09-01 16:00:00</span>
+			               	            </div>
+			               	        </td>
+			                        <td>
+			                            <div class="text-start">
+			               	               <span class="badge rounded-pill conflict_status fw-normal px-3 mx-2" id = "batches_info">Scheduled slot</span>
+			               	            </div>
+			                        </td>
+			                        <td>
+			                        	<div class="text-center">
+			                        	    <label class="switch" for="checkbox">
+									           <input type="checkbox" id="checkbox" class="form-control" checked />
+									           <div class="slider round"></div>
+									        </label>
+									         <span class="badge rounded-pill conflict_status fw-normal px-3 mx-2" id = "batches_info">Included</span>
+									    </div>
+			                        </td>
+			                        <td>
+			               	           <textarea class="form-control py-0"></textarea>
+			                        </td>
+				                </tr>
+
+			            	    <tr>
+			            			<td>Ruwal Shah</td>
+			                        <td>Busibud</td>
+			                        <td>
+			               	           <div class="text-start">
+			               	               <span class="badge login-time fw-normal px-3 mx-2" id = "batches_info">2021-09-01 13:00:00</span>
+			               	            </div>
+			               	        </td>
+			               	         <td>
+			               	           <div class="text-start">
+			               	               <span class="badge logout-time fw-normal px-3 mx-2" id = "batches_info">2021-09-01 16:00:00</span>
+			               	            </div>
+			               	        </td>
+			                        <td>
+			                            <div class="text-start">
+			               	               <span class="badge rounded-pill conflict_status fw-normal px-3 mx-2" id = "batches_info">Scheduled slot</span>
+			               	            </div>
+			                        </td>
+			                        <td>
+			                        	<div class="text-center">
+			                        	     <label class="switch" style=""> <input class="togBtn" type="checkbox"> <span class="slider round"></span></label>
+			            			       
+									          <span class="badge rounded-pill badge-danger fw-normal px-3 mx-2" id = "batches_info">Not Included</span>
+									    </div>
+			                        </td>
+			                        <td>
+			               	           <textarea class="form-control py-0"></textarea>
+			                        </td>
+			            	    </tr> 				              
+				            </tbody>
+				        </table>
+				    </div>
+		    	</div>
+		    	<div class="modal-footer">
+		    		<button class="btn btn-secondary prev">Prev</button>
+		    		<button class="btn btn-secondary border-secondary links">1</button>
+		    		<button class="btn btn-secondary next">Next</button>
+		    	</div>
+		    </div>
+		  </div>
+	</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $( function() {
+	$( "#datepicker" ).datepicker({
+		dateFormat: "dd-mm-yy"
+		,	duration: "fast"
+	});
+} );
+  $(document).on("click","#batches_info",function(e){
+  	$(".modal").show();
+  })
+  $(document).on("click",".close",function(e){
+  	$(".modal").hide();
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body{
+	background : #ddd;
+	font-family: Roboto;
+}
+.heading{
+	font-family: Muli !important;
+	font-size: 22px;
+}
+.inner-heading{
+	font-size: 18px;
+    color: #444;
+    font-weight: 600;
+    font-family: Muli !important;
+}
+.icons{
+	color : #999;
+	font-size: 14px;
+	cursor: pointer;
+}
+.search_icon{
+	cursor: pointer;
+}
+.ResultsTable__wrapper{
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    position: relative;
+}
+.ResultsTable {
+    min-width: calc(100% - 2px);
+    border-collapse: collapse;
+}
+.ResultsTable--sortable {
+    table-layout: fixed;
+    border: 1px solid #ccc;
+}
+
+.ResultsTable thead th {
+    font-weight: bold;
+    line-height: 16px;
+    font-size: 14px;
+    text-transform: none;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+/*.ResultsTable td, .ResultsTable th {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}*/
+.ResultsTable th {
+    text-align: left;
+    white-space: nowrap;
+    padding: 9px 18px;
+}
+.ResultsTable--sortable th:first-child, .ResultsTable--sortable th:nth-child(2) {
+    min-width: initial;
+}
+.ResultsTable td{
+	padding: 10px;
+	font-size: 14px;
+}
+.ResultsTable tbody tr:nth-child(even){
+	background-color : #f4f7f6;
+}

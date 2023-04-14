@@ -1,0 +1,57 @@
+body{
+	font-family: Roboto;
+	font-size : 15px;
+}
+.container_bucket{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.bg-img{
+	background-size: cover;
+	background-position: bottom;
+    z-index : -1;
+}
+.heading{
+	font: normal normal normal 12px/18px Poppins;
+	font-weight: 600;
+	color: #000;
+}
+.screenplay-div{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    border-radius: 7px;
+}
+.screenplay-title{
+	font: normal normal normal 12px/18px Poppins;
+	font-weight: 600;
+	color: #000;
+}
+.create_video_text{
+	color: #138DDE;
+	font-size: 13px;
+	font: normal normal normal 12px/18px Poppins;
+	line-height: 14px;
+	cursor: pointer;
+	font-weight: 600;
+}
+.play-img,.play-img-screenplay1{
+	width: 20px;
+	transform: translate(-10px,-10px);
+}
+.screenplay-img{
+	width: 61px;
+	height : 59px;
+}
+.right_arrow{
+	width: 18px;
+}
+.screenplay-outer-div{
+	margin-top: 39px;
+}
+
+@media only screen and (max-width: 350px){
+	.play-img,.play-img-screenplay1{
+	   transform: translate(-10px,-10px);
+    }
+}
+	

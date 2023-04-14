@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'> 
+    <link rel="stylesheet" href="repo6.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container mt-5 mb-2 rounded py-3" style="background:#cdc8c8;">
+    <!-- Top heading div -->
+    <div class="row">
+      <div class="col-12 px-4">
+        <h3 class="heading" id="sd-main">Applicant Status</h3>
+      </div>
+    </div>
+    </div>
+  <div class="container mt-5 mb-2 rounded" style="background-color: #cdc8c8;">
+
+    <div class="row mt-3 px-3 py-3">
+      <div class="col-12 col-sm-6">
+        <select class="form-select" aria-label="Default select example" style="width: 50%;">
+          <option selected value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="wrapper bg-white">
+    <div class="row mt-3 px-3 py-3">
+      <div class="col-12 col-sm-6"></div>
+      <div class="col-12 col-sm-6 text-end">
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Filter results">
+        <datalist id="datalistOptions">
+          <option value="San Francisco">
+          <option value="New York">
+          <option value="Seattle">
+          <option value="Los Angeles">
+          <option value="Chicago">
+        </datalist>
+      </div>
+    </div>
+
+
+    <div class="row px-3">
+      <div class="col-sm-12 mx-auto">
+        <div class = "ResultsTable__wrapper mt-4">
+        <table class="ResultsTable ResultsTable--sortable bg-white">
+            <thead>
+              <tr>
+                  <th>Select Agent</th>
+                  <th>E_id</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+                  <th>Process Name</th>
+                  <th>Current Stage</th>
+                  <th>Next Stage</th>
+                  <th>Process Started Date</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    </div>
+                  </td>
+                  <td>18745</td>
+                  <td>Agent Name</td>
+                  <td>agent@gmail.com</td>
+                  <td>432409273</td>
+                  <td>Ashley-HJH-1</td>
+                  <td>
+                    <p style="font-weight: bolder;">Assigning the training slot</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Status</button>
+                  </td>
+
+                  <td>
+                    <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">Move Next</button>
+                  </td>
+                  <td>-</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                </div>
+              </td>
+              <td>18745</td>
+              <td>Agent Name</td>
+              <td>agent@gmail.com</td>
+              <td>432409273</td>
+              <td>Ashley-HJH-1</td>
+              <td>
+                <p style="font-weight: bolder;">Assignment</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Status</button>
+              </td>
+
+              <td>
+                <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">Move Next</button>
+              </td>
+              <td>2021-05-14 13:28:40</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            </div>
+          </td>
+          <td>18745</td>
+          <td>Agent Name</td>
+          <td>agent@gmail.com</td>
+          <td>432409273</td>
+          <td>Ashley-HJH-1</td>
+          <td>
+            <p style="font-weight: bolder;">Contract Signing</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Status</button>
+          </td>
+
+          <td>
+            <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">Move Next</button>
+          </td>
+          <td>2021-05-14 13:35:01</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        </div>
+      </td>
+      <td>18745</td>
+      <td>Agent Name</td>
+      <td>agent@gmail.com</td>
+      <td>432409273</td>
+      <td>Ashley-HJH-1</td>
+      <td>
+        <p style="font-weight: bolder;">Profile created</p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Status</button>
+      </td>
+
+      <td>
+        <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">Move Next</button>
+      </td>
+      <td>2021-05-14 13:28:40</td>
+</tr>
+<tr>
+  <td>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    </div>
+  </td>
+  <td>18745</td>
+  <td>Agent Name</td>
+  <td>agent@gmail.com</td>
+  <td>432409273</td>
+  <td>Ashley-HJH-1</td>
+  <td>
+    <p style="font-weight: bolder;">Video Interaction Scheduled</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Status</button>
+  </td>
+
+  <td>
+    <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">Move Next</button>
+  </td>
+  <td>-</td>
+</tr>
+<tr>
+  <td>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    </div>
+  </td>
+  <td>18745</td>
+  <td>Agent Name</td>
+  <td>agent@gmail.com</td>
+  <td>432409273</td>
+  <td>Ashley-HJH-1</td>
+  <td>
+    <p style="font-weight: bolder;">Selected after trial session</p>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Status</button>
+  </td>
+
+  <td>
+    <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">Move Next</button>
+  </td>
+  <td>2021-08-10 05:43:51</td>
+</tr>
+        </tbody>
+        </table>
+        </div>
+      </div>
+    </div>  
+
+    <div class="row mt-3 px-3 py-3 text-end">
+      <div class="col-12 col-sm-12">
+        <button type="button" class="btn btn-secondary">Prev</button>
+        <button type="button" class="btn btn-secondary">1</button>
+        <button type="button" class="btn btn-secondary">Next</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<!-- Modal-status-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content status-content">
+      <div class="modal-header">
+        <div class="modal-title">
+          Stage Tracking
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <div class="form-floating">
+              <textarea class="form-control" id="floatingTextarea2" style="height: 200px">
+                Input text
+              </textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 pb-5 text-secondary">
+          <div class="col">
+            Form filled questions answers
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal-history-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-muted" id="exampleModalLabel">Stage Tracking</h5>
+    
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+            <div class="form-floating">
+              <textarea class="form-control" id="floatingTextarea2" style="height: 200px"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 text-secondary">
+          <div class="col-6">
+            <button type="button" class="btn btn-primary">Send Email</button>
+          <button type="button" class="btn btn-primary">Send SMS</button>
+          </div>
+          <div class="col-6 text-end">
+            <select class="form-select" aria-label="Default select example" style="width: 50%;display: inline-block;">
+              <option selected value="1">Contract Signing</option>
+              <option value="2">Technical Setup Message</option>
+              <option value="3">Schedule Technical Setup Session</option>
+              <option value="4">Confirmation regarding the Technical Setup</option>
+              <option value="5">Training Slot</option>
+              <option value="6">Choose Time slot</option>
+              <option value="7">Confirmation regarding the training slot</option>
+              <option value="8">Assigning the training slot</option>
+              <option value="9">Regular slot</option>
+              <option value="10">Confirmation regarding the start date for the regular slot coverage</option>
+            </select>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal3">Move Next</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal-sure?-->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body text-secondary">
+        Are you sure?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+        <button type="button" class="btn btn-success">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="repo6.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body{
+	font-family: Roboto;
+}
+.bg-img{
+	background-size: cover;
+	background-position: bottom;
+  z-index : -1;
+}
+.container_bucket{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.back_btn{
+	background: #1492E6 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  font: normal normal normal 13px/18px Nunito Sans;
+  color: #FDFDFD;
+  width: 97px;
+  height: 32px;
+}
+.submit-text{
+	font: normal normal normal 15px/24px Poppins;
+	color: #000000;
+  font-weight: 600;
+}
+.upload-text{
+  font: normal normal normal 12px/24px Poppins;
+  color: #040707;
+  font-weight: 600;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0px 16px 48px #00000029;
+  }
+  
+  .btn-upload{
+    border: none;
+    color: #fff;
+    padding: 8px 10px;
+    font: normal normal normal 13px/19px Nunito Sans;
+    background: #2C9F47 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    
+  }
+  .upload-btn-wrapper input[type=file] {
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+ .uploaded-vedio{
+      display: none;
+      color: #3D97FD;
+      font-family:Roboto;
+  }
+  .uploaded-vedio i{
+      margin-left: 5px;
+      cursor: pointer;
+  }
+  .submit-div{
+  	display: none;
+  }
+  .submit-div input[type = submit]{
+    padding: 8px 20px;
+    border: none;
+    background: #1492E6;
+    border-radius: 4px;
+    color: #fff;
+    font : normal normal normal 13px/19px Nunito Sans;
+    box-shadow: 0px 16px 48px #00000029;
+  }
+  .fileName{
+  	font: normal normal normal 13px/18px Nunito Sans;
+  	color: #3D97FD;
+  }
+  #trash{
+     color: #3D97FD;
+     font-size: 13px;	
+  }
+  .upload-icon{
+  	transform: rotate(270deg);
+  	vertical-align: text-top;
+  }
+  .social_img{
+  	width: 121px;
+  }
+  .insta_img{
+  	width: 36px;
+  }
+  .instruction_text{
+  	font: normal normal bold 15px/24px Nunito Sans;
+    color: #1492E6;
+  }
+  .right_arrow{
+  	width: 18px;
+  }
+  .information-text-first,.information-text-second{
+  	font: normal normal normal 13px/17px Nunito Sans;
+    color: #656161;
+  }
+  .information-list{
+  	list-style: none;
+  }
+  .information-list .information-text-first::before,.information-text-second::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.information-list .information-text-first::before{
+	color: #C9BAE3;
+}
+.information-list .information-text-second::before{
+	color: #F1BBBB
+}

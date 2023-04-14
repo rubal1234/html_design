@@ -1,0 +1,124 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.theme,.theme-black{
+	width: 400px;
+    z-index: -1;
+    background: #00b1b1;
+}
+.theme-black{
+	width: 397px;
+}
+.login-div{
+    box-shadow: 3px 3px 20px 5px rgb(0 0 0 / 5%);
+}
+.auth-left{
+	border-color : #22222285 !important;
+}
+.auth-left img{
+	height: fit-content;
+}
+.login_title{
+	font-size: 26px!important;
+	color: #444;
+}
+.label-captcha{
+	color: #707070;
+	font-size: 12px;
+}
+.label-captcha-link{
+	color: #337ab7;
+}
+.form-control{
+	color: #707070 !important;
+	height: 46px;
+}
+.form-check-input[type="checkbox"]{
+    bottom: 1px;
+    width: 24px;
+    height: 24px;
+    content: "";
+    border: 1px solid #bdbdbd;
+    cursor: pointer;
+} 
+.login_btn{
+    border: 0;
+    height: 46px;
+    background-image: linear-gradient(to left,#FF8F73,#F2547D) !important;
+}
+.text_options{
+	color: #707070;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.forgot-div{
+	font-size: 14px;
+}
+.lock-icon{
+	font-size: 12px;
+}
+.forgot-div a{
+	border-bottom: 1px solid #bdbdbd;
+	cursor: pointer;
+    color : #222;
+	text-decoration: none;
+}
+
+
+/************************************/
+.forgot-bg-img{
+	background: #00b1b1;
+}
+.forgot_title{
+	font-family: muli,sans-serif !important;
+	font-size: 22px;
+	color: #444;
+}
+.email-label-text{
+	font-family: Roboto !important;
+	font-size: 14px;
+	color: #444;
+}
+.email-reset-input{
+	height: auto !important;
+	font-family: muli,sans-serif !important;
+	font-size: 15px;
+	color: #707070;
+}
+.reset_btn{
+	font-family: muli,sans-serif !important;
+	font-size: 15px;
+	background : #3eacff;
+	border-color: #3eacff;
+}
+.reset_btn:hover,.reset_btn:focus{
+    background : #3eacff !important;
+	border-color: #3eacff !important;	
+}
+.login_text_href,.login_text_href:hover,.login_text_href:focus{
+	text-decoration: none;
+	color: #444;
+}
+.login_text_href{
+	border-bottom: 1px solid #bdbdbd;
+}
+@media only screen and (max-width: 767px){
+	.auth-left{
+		display: none !important;
+	}
+	.forgot-bg-img{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 576px){
+	.theme,.theme-black{
+		width: 100%;
+	}
+	.login-div{
+		margin: auto;
+	}
+	.forgot-section{
+	   margin: auto;	
+	}
+}

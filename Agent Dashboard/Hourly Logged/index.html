@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hourly Logged</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+</head>
+<body>
+	 <!--Top Navigation Bar -->
+  <nav class="navbar navbar-expand-lg commonBox_shadow" id = "top-header">
+      <div class="col-4  d-flex btn_BG">
+          <button type="button" id="sidebarCollapse" class="menu_Icon">
+              <img  src="https://img.icons8.com/material-rounded/36/707070/menu--v1.png" alt="hamburger menu" onclick="toggleNav()"/>
+          </button>
+        </div>
+    </nav>
+
+  <!-- Side Navigation Bar -->
+
+  <div id="mySidepanel" class="sidepanel">
+  </div>
+
+   <!-- Main Content -->
+    <div class="main-content px-3 py-2 tab">
+	    <div class="container">
+		  	<div class="row px-4 pt-2">
+		  		<div class="col-12 py-3 px-3">
+		  			<h2 class="heading fw-bold">Hours Logged</h2>
+		  		</div>
+		  	</div>
+
+
+		  	<!--Select date div -->
+		    <div class="row py-2 px-4">
+				<div class="col-lg-7 col-md-12 col-sm-12 d-sm-flex">
+
+				   <label class="py-2 ps-1 label_text">Search by Date: From:</label>
+				    <div class="position-relative d-flex">
+				       <input type="text" id="datepicker" placeholder="Select a date" class="form-control Search__input rounded ms-md-4 ms-sm-1 w-100" autocomplete="off"><span id="basic-addon2"><i class="fas fa-calendar-alt position-absolute end-0 me-md-3 me-3  mt-2 pt-1" id = "datepicker"></i></span>
+				    </div>
+
+				   <label class="py-2 label_text ms-sm-4">to:</label>
+				   <div class="position-relative d-flex">
+				   	   <input type="text" id="datepicker2" placeholder="Select a date" class="form-control Search__input rounded ms-md-4 ms-sm-1 w-100" autocomplete="off"><span  id="basic-addon2"><i class="fas fa-calendar-alt position-absolute end-0 me-md-3 me-3 mt-2 pt-1" id = "datepicker2"></i></span>
+				   </div>
+				</div>
+
+				<div class=" col-lg-2 col-sm-4 col-3  mt-2 mt-lg-0 text-left">
+					<button class="btn btn_clear text-white px-4">Clear</button>
+				</div>
+		    </div>
+
+		       	    <!--Table Section -->
+   	    <div class="row mt-3 px-4">
+   	    	<div class="col-12">
+   	    		<div class = "ResultsTable__wrapper">
+	   	       	    <table class = "ResultsTable ResultsTable--sortable">
+	   	       	 	    <thead>
+	   	       	 		    <tr>
+	   	       	 			    <th>
+	   	       	 				   Date
+	   	       	 			    </th>
+	   	       	 			    <th>Logged Hours (PST)</th>
+	   	       	 			    <th>Logged Hours (Asia/Calcutta)</th>
+	   	       	 			    <th>Report Issue</th>
+	   	       	 			</tr>
+	   	       	 		</thead>
+	   	       	 		<tbody>
+	   	       	 			<tr>
+	   	       	 				<td>2 June 2021</td>
+	   	       	 				<td>10 hrs 15 mins</td>
+	   	       	 				<td>0 hours</td>
+	   	       	 				<td><button class="btn btn-review  text-white">Request Review</button></td>
+	   	       	 			</tr>
+	   	       	 			<tr>
+	   	       	 				<td>2 June 2021</td>
+	   	       	 				<td>10 hrs 15 mins</td>
+	   	       	 				<td>0 hours</td>
+	   	       	 				<td><button class="btn btn-review  text-white">Request Review</button></td>
+	   	       	 			</tr>
+	   	       	 			<tr>
+	   	       	 				<td>2 June 2021</td>
+	   	       	 				<td>10 hrs 15 mins</td>
+	   	       	 				<td>0 hours</td>
+	   	       	 				<td><button class="btn btn-review  text-white">Request Review</button></td>
+	   	       	 			</tr>
+	   	       	 			<tr>
+	   	       	 				<td>2 June 2021</td>
+	   	       	 				<td>10 hrs 15 mins</td>
+	   	       	 				<td>0 hours</td>
+	   	       	 				<td><button class="btn btn-review  text-white">Request Review</button></td>
+	   	       	 			</tr>
+	   	       	 			<tr>
+	   	       	 				<td>2 June 2021</td>
+	   	       	 				<td>10 hrs 15 mins</td>
+	   	       	 				<td>0 hours</td>
+	   	       	 				<td><button class="btn btn-review  text-white btn-approve">See Approval Status <i class="fas fa-angle-right ps-3"></i></button></td>
+	   	       	 			</tr>
+	   	       	 			<tr>
+	   	       	 				<td>2 June 2021</td>
+	   	       	 				<td>10 hrs 15 mins</td>
+	   	       	 				<td>0 hours</td>
+	   	       	 				<td><button class="btn btn-review  text-white">Request Review</button></td>
+	   	       	 			</tr>
+	   	       	 			<tr>
+	   	       	 				<td>2 June 2021</td>
+	   	       	 				<td>10 hrs 15 mins</td>
+	   	       	 				<td>0 hours</td>
+	   	       	 				<td><button class="btn btn-review  text-white btn-approve">See Approval Status <i class="fas fa-angle-right ps-3"></i></button></td>
+	   	       	 			</tr>
+	   	       	 		</tbody>
+	   	       	    </table>
+	   	       	</div>
+	   	    </div>
+		</div>
+		<div class="row text-end mt-3 px-4">
+   	    	<div class="col-12">
+   	    		<div class="pagination_page" style="margin-bottom: 50px">
+   	    			<ul id="pagination_myTable" class="pagination-lg pull-right light-theme simple-pagination">
+   	    				<li class="disabled"><span class="current prev">Prev</span></li>
+   	    				<li class="active"><span class="current">1</span></li>
+   	    				<li class="disabled"><span class="current next">Next</span></li>
+   	    			</ul>
+   	    		</div>
+    	    </div>
+   	    </div>
+	</div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$( function() {
+	$( "#datepicker" ).datepicker({
+		dateFormat: "dd-mm-yy"
+		,	duration: "fast"
+	});
+} );
+
+	$( function() {
+	$( "#datepicker2" ).datepicker({
+		dateFormat: "dd-mm-yy"
+		,	duration: "fast"
+	});
+} );
+
+</script>
+</body>
+</html>

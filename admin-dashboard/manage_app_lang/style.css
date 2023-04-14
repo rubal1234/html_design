@@ -1,0 +1,103 @@
+body{
+	background : #ddd;
+	font-family: Roboto;
+}
+.manage_app_heading{
+	font-size: 22px;
+	color: #707070;
+	font-family: Muli !important;
+}
+.inner-heading{
+    font-size: 18px;
+    color: #444;
+    font-family: Muli !important;
+}
+.label-text{
+	color: #444;
+}
+.wrapper{
+	display: none;
+}
+.ResultsTable__wrapper{
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 15px;
+    position: relative;
+}
+.ResultsTable {
+    min-width: calc(100% - 2px);
+    border-collapse: collapse;
+}
+.ResultsTable--sortable {
+    table-layout: fixed;
+}
+
+.ResultsTable thead th {
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 14px;
+    text-transform: none;
+    color: #000;
+}
+
+.ResultsTable td, .ResultsTable th {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.ResultsTable th {
+    text-align: left;
+    white-space: nowrap;
+    padding: 9px 18px;
+}
+.ResultsTable--sortable th:first-child, .ResultsTable--sortable th:nth-child(2) {
+    min-width: initial;
+}
+.ResultsTable tbody tr:hover{
+	background-color : #f4f7f6;
+}
+.ResultsTable tbody tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+.ResultsTable td{
+	padding: 10px;
+	font-size: 14px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.modal_footer{
+	flex-wrap: nowrap;
+}
+.cancel_btn{
+	background : #ddd;
+}

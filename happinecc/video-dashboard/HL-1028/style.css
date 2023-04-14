@@ -1,0 +1,119 @@
+body{
+	font-family: Roboto;
+	font-size : 15px;
+}
+.heading{
+    font: normal normal normal 12px/18px Poppins;
+    color: #000;
+    font-weight: 600;
+}
+.bg-img{
+	background-size: cover;
+	background-position: bottom;
+    z-index : -1;
+    height: calc(100% - 60px);
+}
+.container_bucket{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.logo{
+	width: 121px;
+}
+.social_icons{
+	color: #000;
+	font: normal normal normal 12px/18px Poppins;
+}
+.follower-div{
+	display: none;
+	background: #DFE0E1 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 6px;
+}
+.caret-down-icon{
+	transform: translateY(-10px);
+}
+.dropdown-menu{
+	box-shadow: 0px 16px 48px #00000029;
+	border : none !important;
+}
+.dropdown-item{
+	color: #707070;
+	font: normal normal normal 12px/18px Poppins;
+}
+.dropdown-item:hover{
+	background : #707070 !important;
+	border: 1px solid #707070 !important;
+	color: #fff;
+	transform: scale(0.95);
+}
+.dropdown-toggle::after{
+	float: right;
+	margin-top: 8px;
+}
+.dropdown-selected{
+	font: normal normal normal 9px/18px Poppins;
+	color: #888888;
+}
+.btn:hover , .btn:focus{
+	box-shadow: none;
+	color: #707070;
+}
+.form-check-input:focus{
+   box-shadow: none;
+}
+.checked{
+	color: #227BE6;
+}
+.prev{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    border: 1px solid #237CE7;
+    color: #237CE7;
+    width: 96px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 7px 13px 8px;
+    white-space: nowrap;
+}
+.next{
+	background: #237CE7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 48px #00000029;
+    border: 1px solid #237CE7;
+    color: #fff;
+    width: 104px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 7px 13px 8px;
+    white-space: nowrap;
+}
+.prev:hover,.prev:focus{
+	color: #237CE7 !important;
+}
+.next:hover,.next:focus{
+	color: #fff !important;
+}
+.exclamation-circle{
+	color: #D8BD0C;
+	font-size: 24px;
+	vertical-align: middle;
+}
+.val-message{
+	font: normal normal normal 12px/18px Poppins;
+	color: #707070;
+}
+
+.action_btns{
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    bottom: 0px;
+    height: 60px;
+    background: #f1f1f1;
+}
+.button_div{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
